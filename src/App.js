@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import ParticlesBg from "particles-bg";
 
 
 import './App.css';
@@ -26,16 +25,16 @@ class App extends React.Component {
       ],
       home: {
         title: 'Into the Kyler-verse',
-        subtitle: 'What I spend my time doing',
-        text: '',
+        subtitle: 'How I spend my time',
+        text: 'This website is still under development. Stay tuned!',
       },
       about: {
-        title: 'A bit about me',
+        title: 'About Me',
         subtitle: 'born in Virginia, USA, raised in Johannesburg, South Africa, recently spotted in Philadelphia, USA',
         text: '',
       },
       contact: {
-        title: 'Let\'s Chat!',
+        title: 'Get in touch!',
         subtitle: '',
         text: '',
       }
@@ -66,7 +65,7 @@ class App extends React.Component {
           </Navbar>
 
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text} />} />
-          <Route path="/about" exact render={() => <AboutPage title={this.state.about.title} />} />
+          <Route path="/about" exact render={() => <AboutPage title={this.state.about.title} subtitle={this.state.about.subtitle} />} />
           <Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title} />} />
 
 

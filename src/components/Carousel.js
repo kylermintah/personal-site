@@ -26,7 +26,7 @@ class Carousel extends React.Component {
                     title: 'Kyler Mintah',
                     subtitle: 'more about me',
                     image: headshot,
-                    link: 'https://www.google.com',
+                    link: 'https://www.linkedin.com/in/kyler-mintah-399b78121',
                     selected: false
                 },
                 {
@@ -34,7 +34,7 @@ class Carousel extends React.Component {
                     title: 'Creative Projects',
                     subtitle: 'photography, animation and more',
                     image: kojo,
-                    link: 'https://www.google.com',
+                    link: 'https://vimeo.com/user73148798',
                     selected: false
                 },
 
