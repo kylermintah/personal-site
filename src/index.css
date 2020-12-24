@@ -39,7 +39,7 @@ color:rgb(255, 255, 255);
   background-position: center;
 }
 
-.k-card-background:hover,  {
+.k-card-background:hover {
   opacity:0.9;
   filter: brightness(50%);
   background: black;
