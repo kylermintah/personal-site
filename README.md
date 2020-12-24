@@ -1,5 +1,7 @@
 # personal-site
 My personal website
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dad8727c-7a19-43d8-a050-f8d1218ed6b6/deploy-status)](https://app.netlify.com/sites/focused-montalcini-9263bc/deploys)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
