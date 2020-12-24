@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Card from './Card';
 
-import blackpanther from '../assets/black-panther.png'
 import headshot from '../assets/headshot.jpg'
 import eventhopper from '../assets/eventhopper.gif'
 import kojo from '../assets/kojo.gif'

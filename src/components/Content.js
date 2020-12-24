@@ -1,4 +1,3 @@
-import react from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
 function Content(props) {
