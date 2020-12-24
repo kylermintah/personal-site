@@ -6,7 +6,7 @@ function Card(props) {
 
     return (
         <div>
-            <div className="d-inline-block k-card " style={{ marginTop: '60%', }} onMouseOver={(e) => props.onHover(props.item)} onTouchStartCapture={(e) => props.onHover(props.item)} >
+            <div className="d-inline-block k-card " style={{ marginTop: '30%', }} onMouseOver={(e) => props.onHover(props.item)} onTouchStartCapture={(e) => props.onHover(props.item)} >
 
                 <a className="k-link " href={props.item.link} target="_blank" rel="noreferrer">
 
