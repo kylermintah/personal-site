@@ -6,8 +6,8 @@ import ParticlesBg from "particles-bg";
 function HomePage(props) {
 
     return (
-        <div>
-            <ParticlesBg type="ball" bg={true}>
+        <div >
+            <ParticlesBg type="cobweb" bg={true} >
                 {/* Particle Types
               "color"
               "ball"

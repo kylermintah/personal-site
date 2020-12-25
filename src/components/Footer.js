@@ -1,18 +1,18 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
-function Footer(){
+function Footer() {
 
-    return(
+    return (
         <footer className="mt-5">
             <Container fluid={true}>
-                
+
                 <Row className="border-top justify-content-between p-3">
                     <Col className="p-0" md={3} sm={12}>
-                    Kyler Mintah
+
                     </Col>
                     <Col className="p-0 d-flex justify-content-end" md={3} >
-                    This site was made by Kyler Mintah
+                        ❤ <a href='https://www.youtube.com/watch?v=zzH4rV08TLI' target='_blank' rel='noreferrer'>🕷</a> Kyler Mintah 2020
                     </Col>
                 </Row>
             </Container>
