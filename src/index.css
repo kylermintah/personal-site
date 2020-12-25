@@ -50,22 +50,18 @@ color:rgb(255, 255, 255);
   background-size: cover;
 }
 
-.k-card:hover + .k-card-info{
+/* .k-card:hover ~.k-card-info{
   display: block;
   font-size:10px;
   min-height: 100px;
   margin-top: 0%;
   padding: 0%;
   opacity:1;
-}
+} */
 
 .k-card-title{
   font-size:24px;
   margin: 0px;
-}
-
-.k-card-info{
-  display: none;
 }
 
 @media only screen and (max-width: 1026px) {
@@ -77,6 +73,15 @@ color:rgb(255, 255, 255);
     padding: 5%;
     opacity:1,
   }
+}
+
+.k-card-info{
+  display: block;
+  font-size:10px;
+  min-height: 100px;
+  margin-top: 0%;
+  padding: 0%;
+  opacity:0;
 }
 
 .k-card-subtitle{

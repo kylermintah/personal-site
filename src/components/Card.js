@@ -4,6 +4,9 @@ import CardInfo from './CardInfo';
 
 function Card(props) {
 
+    const displayAnyway = (window.matchMedia("(max-width: 1026px)").matches);
+
+
     return (
         <div>
             <div className="d-inline-block k-card " style={{ marginTop: '20%', }} onMouseOver={(e) => props.onHover(props.item)} onTouchStartCapture={(e) => props.onHover(props.item)} >
@@ -16,7 +19,7 @@ function Card(props) {
                     {/* <img className = 'k-card-image' src={props.item.image} alt={props.item.image} unselectable="on"/> */}
                 </a>
             </div>
-            { <CardInfo title={props.item.title} subtitle={props.item.subtitle} />}
+            { (displayAnyway || props.item.selected) && <CardInfo title={props.item.title} subtitle={props.item.subtitle} opacity={0} />}
         </div>
 
     );
