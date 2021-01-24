@@ -64,11 +64,31 @@ return (<VerticalTimeline className='k-overflow' layout='1-columns' >
     
     <p style={{fontWeight:'300'}}>
       Google Pixel Team<br></br>
-      Bluetooth Power Optimization<br></br>
       Contributed 5,000+ loc to team codebase<br></br>
+      Two projects with focus on Bluetooth power optimization, testing & development ahead of Pixel 4 and Android 10 rollout<br></br>
     </p>
     <div style={{position: 'relative', marginLeft:-150}}>
     <img src = {bike} height={250} alt='animation I drew of me riding a bike during the Summer of 2020. Was my main method of transportation then.'/>
+    </div>
+  </VerticalTimelineElement>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    date="Jan 2019 - May 2020"
+    iconStyle={{ background: '#fff', color: '#fff' }}
+    icon={<img className='vertical-timeline-element-icon bounce-in'  src="https://media-exp1.licdn.com/dms/image/C4E0BAQFGFNmrO7AKNg/company-logo_100_100/0/1553536363764?e=1619654400&v=beta&t=f0i8545Sltuqy3CBrffP-RHjHBAeWYXK1Fb9LnhIqe4" alt='Google logo' height={55}/>}
+    // icon={
+    // <FontAwesomeIcon className='fas fa-lg' icon={faGoogle} />}
+  >
+    <h3 className="vertical-timeline-element-title" style={{fontWeight:'lighter'}}>Co-Founder</h3>
+    <h4 className="vertical-timeline-element-subtitle"><strong>SilkBlu Technologies LLC</strong></h4>
+    <p>Philadelphia, PA</p>
+    
+    <p style={{fontWeight:'300'}}>
+      5 member software consulting team<br></br>
+      UPenn Innovation Prize Top 6 placement<br></br>
+      Wharton StartUp Challenge semi-finalists <br></br>
+    </p>
+    <div style={{position: 'relative', marginLeft:-150}}>
     </div>
   </VerticalTimelineElement>
   <VerticalTimelineElement
@@ -96,8 +116,8 @@ return (<VerticalTimeline className='k-overflow' layout='1-columns' >
     <h3 className="vertical-timeline-element-title" style={{fontWeight:'lighter'}}>St Stithians Boys' College</h3>
     <h4 className="vertical-timeline-element-subtitle">High School Diploma</h4>
     <p style={{fontWeight:'300'}}>
-      Deputy Head Boy<br/>
-      Academic Honours<br/>
+      Johannesburg, South Africa<br/>
+      
 
     </p>
   </VerticalTimelineElement>
