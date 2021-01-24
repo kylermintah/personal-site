@@ -30,7 +30,7 @@ class App extends React.Component {
       },
       about: {
         title: 'About Me',
-        subtitle: 'born in Virginia, USA, raised in Johannesburg, South Africa, recently spotted in Philadelphia, USA',
+        subtitle: 'born in Virginia, USA, raised in Johannesburg, South Africa, recently spotted around Philadelphia, USA',
         text: '',
       },
       contact: {

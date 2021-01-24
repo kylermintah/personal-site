@@ -25,7 +25,7 @@ class Carousel extends React.Component {
                     title: 'Kyler Mintah',
                     subtitle: 'more about me',
                     image: headshot,
-                    link: 'https://www.linkedin.com/in/kyler-mintah-399b78121',
+                    link: '#/about',
                     selected: false
                 },
                 {
