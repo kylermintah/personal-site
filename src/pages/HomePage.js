@@ -7,7 +7,7 @@ function HomePage(props) {
 
     return (
         <div>
-            <ParticlesBg type="ball" bg={true}>
+            <ParticlesBg type="custom" bg={true}>
                 {/* Particle Types
               "color"
               "ball"

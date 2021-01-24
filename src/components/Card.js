@@ -12,6 +12,7 @@ function Card(props) {
             <div className="d-inline-block k-card " style={{ marginTop: '20%', }} onMouseOver={(e) => props.onHover(props.item)} onTouchStartCapture={(e) => props.onHover(props.item)} >
 
                 <a className="k-link " href={props.item.link} target="_blank" rel="noreferrer">
+                {/* <a className="k-link " href={props.item.link} > */}
 
                     <div className="k-card-background inner-shadow" style={{ backgroundImage: `url(${props.item.image})`, }}>
 
