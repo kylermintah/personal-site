@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
+import ProjectPage from './pages/ProjectPage';
 
 
 class App extends React.Component {
@@ -31,6 +32,11 @@ class App extends React.Component {
       about: {
         title: 'About Me',
         subtitle: 'born in Virginia, USA, raised in Johannesburg, South Africa, recently spotted around Philadelphia, USA',
+        text: '',
+      },
+      projects: {
+        title: 'What I\'ve worked on',
+        subtitle: 'How I have kept busy with awesome friends and colleagues',
         text: '',
       },
       contact: {
@@ -58,6 +64,7 @@ class App extends React.Component {
               <Nav className='ml-auto'>
                 <Link className="nav-link" to="/">Home</Link>
                 <Link className='nav-link' to='/about'>About</Link>
+                <Link className='nav-link' to='/projects'>Projects</Link>
                 <Link className='nav-link' to='/contact'>Contact</Link>
               </Nav>
             </Navbar.Collapse>
@@ -66,6 +73,7 @@ class App extends React.Component {
 
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text} />} />
           <Route path="/about" exact render={() => <AboutPage title={this.state.about.title} subtitle={this.state.about.subtitle} />} />
+          <Route path="/projects" exact render={() => <ProjectPage title={this.state.projects.title} subtitle={this.state.projects.subtitle} />} />
           <Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title} />} />
 
           <Footer >
