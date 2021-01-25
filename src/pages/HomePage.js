@@ -20,8 +20,8 @@ function HomePage(props) {
               "tadpole"
               "fountain"
               "random"
-              "custom" */}
-            </ParticlesBg>
+              "custom" */}</ParticlesBg>
+            
             <Spotlight title={props.title} subtitle={props.subtitle} text={props.text} />
             <Carousel />
         </div>
