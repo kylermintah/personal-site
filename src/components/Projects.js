@@ -7,28 +7,35 @@ import 'react-vertical-timeline-component/style.min.css';
 import clc from '../assets/clc.png';
 import tito from '../assets/tito-mockup.png';
 
-
+//TODO: https://penntoday.upenn.edu/news/home-still-engaged-stem-classes#content:~:text=Celebrating%20seniors <--- Link this in read more button
 function Projects(props) {
 return (<VerticalTimeline className='k-overflow' layout='2-columns' >
-   
+   <VerticalTimelineElement
+   icon={<img className='vertical-timeline-element-icon bounce-in'  src="https://branding.web-resources.upenn.edu/sites/default/files/simplified-shield-final%20%285%29.png" alt='University of Pennsylvania logo' height={55}/>}
+   contentStyle={{ background: '#2D364F', color: '#fff', }}
+    contentArrowStyle={{ borderRight: '7px solid #3A465C' }}
+  >
+     <h3 className="vertical-timeline-element-title" style={{fontWeight:'lighter'}}>University of Pennsylania</h3>
+     <h5 className="vertical-timeline-element-subtitle"><strong>Projects undertaken during college</strong></h5>
+   </VerticalTimelineElement>
   <VerticalTimelineElement
     
     contentStyle={{ background: '#2D364F', color: '#fff', }}
     contentArrowStyle={{ borderRight: '7px solid #3A465C' }}
-    date="Aug 2019 - May 2020"
-    dateClassName='k-date'
+    date="Fall'19 - Spring'20"
+    dateClassName='k-date-2'
     iconStyle={{ background: '#fff', color: '#fff',}}
     icon={<img className='vertical-timeline-element-icon bounce-in' src={tito}alt='University of Pennsylvania logo' height={55}/>}
-    
-    // icon={
-    // <FontAwesomeIcon className='fas fa-2x'  icon={faMicrosoft} />}
+
   >
    
     <h3 className="vertical-timeline-element-title" style={{fontWeight:'lighter'}}>TITO</h3>
     <h4 className="vertical-timeline-element-subtitle"><strong>Tune In, Tune Out</strong></h4>
-    <p>University of Pennsylvania</p>
-        <p style={{fontWeight:'300'}}>ESE Senior Design<br/>
-        Ketterer Memorial Prize Winning Project<br/>
+    <p>ESE Senior Project</p>
+        <p style={{fontWeight:'300', WebkitTextFillColor:'#FFBC00'}}>
+          Ketterer Memorial Prize Winning Project 🎉<br/>
+        </p>
+        <p style={{fontWeight:'300'}}>
         A snap-on wearable solution for selective noise filtering <br/>
         <hr class="solid" color='#7B7D82'></hr>
         <strong>Kotlin, Python, Embedded Systems, Singal Processing</strong> <br/>
@@ -53,18 +60,15 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
     
     contentStyle={{ background: '#2D364F', color: '#FFFFFF', }}
     contentArrowStyle={{ borderRight: '7px solid  #2D364F' }}
-    date="Jan 2019 - May 2019"
-    dateClassName='k-date'
+    date="Spring'19"
+    dateClassName='k-date-2'
     iconStyle={{ background: '#fff', color: '#fff',}}
     icon={<img className='vertical-timeline-element-icon bounce-in' src={clc}alt='University of Pennsylania logo' height={55}/>}
-    
-    
-    // icon={
-    // <FontAwesomeIcon className='fas fa-2x'  icon={faMicrosoft} />}
+
   >
     <h3 className="vertical-timeline-element-title" style={{fontWeight:'lighter'}}>Calorie Life Cam</h3>
     <h4 className="vertical-timeline-element-subtitle"><strong>Embedded Systems Project</strong></h4>
-    <p>University of Pennsylvania</p>
+    <p>ESE 350</p>
     
         
         <p style={{fontWeight:'300'}}>Wearble dietary documentation device<br/>
@@ -81,6 +85,37 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
         /></div>
         <br/><br/>
           Teammate(s): <strong><a className='link' href='https://www.ransfordantwi.com/' target='_blank' rel='noreferrer'> Ransford Antwi</a></strong> <br/>
+        </p>
+  
+  </VerticalTimelineElement>
+
+  <VerticalTimelineElement
+    
+    contentStyle={{ background: '#2D364F', color: '#FFFFFF', }}
+    contentArrowStyle={{ borderRight: '7px solid  #2D364F' }}
+    date="Fall'18"
+    dateClassName='k-date-2'
+    iconStyle={{ background: '#fff', color: '#fff',}}
+    icon={<img className='vertical-timeline-element-icon bounce-in' src={'https://cdn11.bigcommerce.com/s-e3wpevzfi1/images/stencil/960w/products/1982/35541/Taylor-GSmini-Rosewood-2__13131.1606329435.jpg?c=2'}alt='University of Pennsylania logo' height={55}/>}
+  >
+    <h3 className="vertical-timeline-element-title" style={{fontWeight:'lighter'}}>Automatic Guitar Tuner</h3>
+    <h4 className="vertical-timeline-element-subtitle"><strong>Signal Processing Project</strong></h4>
+    
+        
+        <p style={{fontWeight:'300'}}>Developed automated guitar tuning software & handheld knob-turning device<br/>
+        <hr class="solid" color='#7B7D82'></hr>
+          <strong>Matlab, Arduino, Signal Processing</strong><br/>
+          <hr class="solid" color='#7B7D82'></hr>
+          <br/>
+          <div class="iframe-container">
+          <iframe src='https://player.vimeo.com/video/306698121?byline=0&portrait=0'
+        frameborder='0'
+        allow='autoplay; encrypted-media'
+        allowfullscreen
+        title='video'
+        /></div>
+        <br/><br/>
+          Teammate(s): <strong><a className='link' href='https://www.linkedin.com/in/andrew-adallah-a58876136/' target='_blank' rel='noreferrer'> Andrew Adallah</a></strong> <br/>
         </p>
   
   </VerticalTimelineElement>
