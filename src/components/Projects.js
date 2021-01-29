@@ -16,7 +16,8 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
     contentArrowStyle={{ borderRight: '7px solid #3A465C' }}
   >
      <h3 className="vertical-timeline-element-title" style={{fontWeight:'lighter'}}>University of Pennsylania</h3>
-     <h5 className="vertical-timeline-element-subtitle"><strong>Projects undertaken during college</strong></h5>
+     <h5 className="vertical-timeline-element-subtitle"><strong>B.S.E Electrical Engineering w/CS minor</strong></h5><br/>
+     <lighter>Projects below were undertaken during college</lighter>
    </VerticalTimelineElement>
   <VerticalTimelineElement
     
