@@ -7,7 +7,6 @@ import 'react-vertical-timeline-component/style.min.css';
 import clc from '../assets/clc.png';
 import tito from '../assets/tito-mockup.png';
 
-//TODO: https://penntoday.upenn.edu/news/home-still-engaged-stem-classes#content:~:text=Celebrating%20seniors <--- Link this in read more button
 function Projects(props) {
 return (<VerticalTimeline className='k-overflow' layout='2-columns' >
    <VerticalTimelineElement
@@ -48,6 +47,7 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
         allowfullscreen
         title='video'
         /></div>
+        <strong><a className='link' href='https://penntoday.upenn.edu/news/home-still-engaged-stem-classes#content:~:text=Celebrating%20seniors' target='_blank' rel='noreferrer'> Read More</a></strong> <br/>
         <br/><br/>
         Teammate(s):<strong>
           <a className='link' href='https://celine-lee.github.io/index.html#about' target='_blank' rel='noreferrer'> Celine Lee</a>, 
