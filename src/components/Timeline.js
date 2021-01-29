@@ -5,6 +5,7 @@ import 'react-vertical-timeline-component/style.min.css';
 // import { faMicrosoft, faGoogle } from '@fortawesome/free-brands-svg-icons'
 // import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import bike from '../assets/kyler-bike.gif';
+import google from '../assets/g-logo.gif';
 
 function Timeline(props) {
 return (<VerticalTimeline className='k-overflow' layout='1-columns' >
@@ -54,7 +55,7 @@ return (<VerticalTimeline className='k-overflow' layout='1-columns' >
     className="vertical-timeline-element--work"
     date="Jun 2019 - Sep 2019"
     iconStyle={{ background: '#fff', color: '#fff' }}
-    icon={<img className='vertical-timeline-element-icon bounce-in'  src="https://assets.stickpng.com/images/5847f9cbcef1014c0b5e48c8.png" alt='Google logo' height={55}/>}
+    icon={<img className='vertical-timeline-element-icon bounce-in'  src={google} style={{objectFit:'cover'}} alt='Google logo' height={55}/>}
     // icon={
     // <FontAwesomeIcon className='fas fa-lg' icon={faGoogle} />}
   >
