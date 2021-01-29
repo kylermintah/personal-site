@@ -30,13 +30,13 @@ class App extends React.Component {
         text: 'This website is still under development. Stay tuned!',
       },
       about: {
-        title: 'What keeps me busy',
+        title: 'About Me',
         subtitle: 'born in Virginia, USA, raised in Johannesburg, South Africa, recently spotted around Philadelphia, USA',
         text: '',
       },
       projects: {
-        title: 'What keeps me up at night',
-        subtitle: 'Projects I\'ve been able to work on both solo and with extraordinary teammates',
+        title: 'What keeps me busy',
+        subtitle: 'Projects I\'ve been able to work on solo and with extraordinary teammates',
         text: '',
       },
       contact: {
