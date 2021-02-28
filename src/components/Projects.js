@@ -7,6 +7,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import clc from '../assets/clc.png';
 import tito from '../assets/tito-mockup.png';
 
+
 export function Projects(props) {
 return (<VerticalTimeline className='k-overflow' layout='2-columns' >
    <VerticalTimelineElement
