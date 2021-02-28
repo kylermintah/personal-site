@@ -1,7 +1,6 @@
 import React from 'react';
 import Carousel from '../components/Carousel';
 import Spotlight from '../components/Spotlight';
-import ParticlesBg from "particles-bg";
 
 function HomePage(props) {
 
