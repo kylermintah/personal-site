@@ -29,7 +29,7 @@ class App extends React.Component {
       home: {
         title: 'Kyler Mintah',
         subtitle: '',
-        text: 'Customer Engineer | Developer | Aspiring Entrepreneur',
+        text: 'Customer Engineer | Developer ',
       },
       about: {
         title: 'About Me',

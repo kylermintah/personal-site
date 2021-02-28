@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactMarkdown from 'react-markdown'
 import yamlTemplatePath from '../articles/yaml-templates/yaml-templates.md'
-import CodeBlock from '../articles/utils'
+import {CodeBlock, HeadingRenderer} from '../articles/utils'
 
 class BlogPage extends Component {
   constructor(props) {
@@ -19,12 +19,12 @@ class BlogPage extends Component {
   render() {
       
     return (
-        <div className='d-flex justify-content-center'>
-        <div class="d-flex justify-content-md-center" style={{maxWidth:'1000px', marginTop:'50px'}}>
+        <div className='d-flex justify-content-md-center'>
+        <div class="" style={{maxWidth:'750px', marginTop:'50px', justifyContent:'center'}}>
             {/* <Spotlight title={props.title} text={props.subtitle} /> */}
         
             <div className="content">
-                <ReactMarkdown source={this.state.terms} renderers={{ code: CodeBlock }} className="line-break"/>
+                <ReactMarkdown source={this.state.terms} renderers={{ code: CodeBlock, heading: HeadingRenderer,  }} allowDangerousHtml={true} className="line-break"/>
             </div>
       </div>
       </div>

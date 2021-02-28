@@ -9,9 +9,9 @@ function DigitalGardenPage(props) {
         <div>
    
             <Spotlight title={props.title} text={props.subtitle} />
-            
             <Content>
-            <div style={{height:24}}></div>
+            <a href='https://maggieappleton.com/garden-history' target='_blank' rel='noreferrer'> What is a digital garden?</a>
+            <div style={{height:48}}></div>
              <Garden/>
             </Content>
             

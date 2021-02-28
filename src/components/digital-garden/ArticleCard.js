@@ -10,25 +10,25 @@ export function ArticleCard({classes, children, ...restProps}) {
     )
 }
 
-ArticleCard.Body = function CardBody({classes, children, ...restProps}) {
+ArticleCard.Body = function ArticleCardBody({classes, children, ...restProps}) {
     return (<Body className={classNames('card__body', classes)} {...restProps} >
             {children}
     </Body>)
 }
 
-ArticleCard.Title = function CardTitle({classes, children, ...restProps}) {
+ArticleCard.Title = function ArticleCardTitle({classes, children, ...restProps}) {
     return (<Title className={classNames('card__title', classes)} {...restProps}>
             {children}
     </Title>)
 }
 
-ArticleCard.Text = function CardImage({classes, children, ...restProps}) {
+ArticleCard.Text = function ArticleCardImage({classes, children, ...restProps}) {
     return (<Text className={classNames('card__text', classes)} {...restProps} >
             {children}
     </Text>)
 }
 
-ArticleCard.Image = function CardImage({src, alt, classes, ...restProps}) {
+ArticleCard.Image = function ArticleCardImage({src, alt, classes, ...restProps}) {
     return (
     <Image 
         src={src} 
@@ -38,8 +38,9 @@ ArticleCard.Image = function CardImage({src, alt, classes, ...restProps}) {
     </Image>)
 }
 
-ArticleCard.Button = function CardButton({classes, children, ...restProps}){
+ArticleCard.Button = function ArticleCardButton({classes, children, link, ...restProps}){
     return (
+        <a href={link} style={{textDecorationLine:'none'}}>
         <Button
         type="button"
         className={classNames('card__button', classes)} 
@@ -47,7 +48,9 @@ ArticleCard.Button = function CardButton({classes, children, ...restProps}){
         >
             {children}
         </Button>
+        </a>
     )
+    
 }
 
 export default ArticleCard;

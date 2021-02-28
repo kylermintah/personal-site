@@ -1,9 +1,8 @@
 import * as React from "react";
 import { ArticleCard } from './ArticleCard';
-import { Container, Row } from 'react-bootstrap';
 import './styles/Garden.scss';
 
-import articles from './articles'
+import articles from '../../articles/articles.json'
 
 export function Garden(props) {
     return (
@@ -16,7 +15,7 @@ export function Garden(props) {
               <ArticleCard.Body>
                 <ArticleCard.Title>{article.title}</ArticleCard.Title>
                 <ArticleCard.Text>{article.text}</ArticleCard.Text>
-                <ArticleCard.Button>{article.ctaText}</ArticleCard.Button>
+                <ArticleCard.Button link={article.link}>{article.ctaText}</ArticleCard.Button>
               </ArticleCard.Body>
             </ArticleCard>
           ))}

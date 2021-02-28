@@ -42,8 +42,8 @@ export const Button = styled.button`
   margin-top: auto;
   width: 100%;
   color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: #0CA656;
+  border-color: #0CA656;
   display: block;
   font-weight: bold;
   text-align: center;
@@ -58,7 +58,7 @@ export const Button = styled.button`
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   &:hover {
     color: #fff;
-    background-color: #218838;
-    border-color: #1e7e34;
+    background-color: #5DC38E;
+    border-color: #5DC38E;
   }
 `;
