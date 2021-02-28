@@ -6,7 +6,7 @@ import headshot from '../assets/headshot-reduced.jpg'
 import eventhopper from '../assets/eventhopper.gif'
 import kojo from '../assets/kojo.gif'
 
-class Carousel extends React.Component {
+export class Carousel extends React.Component {
 
     constructor(props) {
         super(props);
@@ -25,7 +25,7 @@ class Carousel extends React.Component {
                     title: 'Kyler Mintah',
                     subtitle: 'more about me',
                     image: headshot,
-                    link: '#/about',
+                    link: 'https://www.linkedin.com/in/kyler-mintah-399b78121/',
                     selected: false
                 },
                 {

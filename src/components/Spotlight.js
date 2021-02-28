@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Jumbotron, Row } from "react-bootstrap";
 
 
-function Spotlight(props) {
+export function Spotlight(props) {
     return (<Jumbotron className='bg-transparent jumbotron-fluid p-0' >
         <Container fluid={true}>
             <Row className='justify-content-center'>

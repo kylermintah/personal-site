@@ -7,7 +7,7 @@ function HomePage(props) {
 
     return (
         <div>
-            <ParticlesBg type="custom" bg={true}>
+            {/* <ParticlesBg type="custom" bg={true}> */}
                 {/* Particle Types
               "color"
               "ball"
@@ -20,7 +20,7 @@ function HomePage(props) {
               "tadpole"
               "fountain"
               "random"
-              "custom" */}</ParticlesBg>
+            //   "custom" */}
             
             <Spotlight title={props.title} subtitle={props.subtitle} text={props.text} />
             <Carousel />

@@ -1,6 +1,6 @@
 import { Col, Container, Row } from 'react-bootstrap';
 
-function Content(props) {
+export function Content(props) {
     return (
         <Container fluid={true}>
             <Row className='justify-content-center'>

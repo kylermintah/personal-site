@@ -1,0 +1,10 @@
+[
+    {
+        "id":"1",
+        "title":"Azure DevOps Build & Release YAML Templates",
+        "subtitle":"Building pipelines with interchangeable YAML template files in Azure Pipelines",
+        "image":"https://miro.medium.com/max/300/0*EBCw6fLJA5-spZqT.png",
+        "ctaText":"Read",
+        "link":"#/yaml-templates"
+    }
+]
