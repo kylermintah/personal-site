@@ -7,7 +7,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import clc from '../assets/clc.png';
 import tito from '../assets/tito-mockup.png';
 
-function Projects(props) {
+export function Projects(props) {
 return (<VerticalTimeline className='k-overflow' layout='2-columns' >
    <VerticalTimelineElement
    icon={<img className='vertical-timeline-element-icon bounce-in'  src="https://branding.web-resources.upenn.edu/sites/default/files/simplified-shield-final%20%285%29.png" alt='University of Pennsylvania logo' height={55}/>}

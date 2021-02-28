@@ -1,7 +1,7 @@
 import React from "react";
 import { useSpring, animated } from 'react-spring';
 
-function CardInfo(props) {
+export function CardInfo(props) {
 
     let style = useSpring({
         opacity: 1, from: { opacity: props.opacity }

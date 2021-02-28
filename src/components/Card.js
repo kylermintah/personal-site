@@ -2,7 +2,7 @@ import React from 'react';
 import CardInfo from './CardInfo';
 
 
-function Card(props) {
+export function Card(props) {
 
     const displayAnyway = (window.matchMedia("(max-width: 1026px)").matches);
 

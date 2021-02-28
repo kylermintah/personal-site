@@ -7,7 +7,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import bike from '../assets/kyler-bike.gif';
 import google from '../assets/g-logo.gif';
 
-function Timeline(props) {
+export function Timeline(props) {
 return (<VerticalTimeline className='k-overflow' layout='1-columns' >
   <VerticalTimelineElement
     

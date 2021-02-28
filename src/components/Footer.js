@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
-function Footer() {
+export function Footer() {
 
     return (
         <footer className="mt-5">
