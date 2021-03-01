@@ -38,10 +38,10 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
         </p>
         <p style={{fontWeight:'300'}}>
         A snap-on wearable solution for selective noise filtering <br/>
-        <hr class="solid" color='#7B7D82'></hr>
+        <hr className="solid" color='#7B7D82'></hr>
         <strong>Kotlin, Python, Embedded Systems, Singal Processing</strong> <br/>
-        <hr class="solid" color='#7B7D82'></hr>
-        <div class="iframe-container">
+        <hr className="solid" color='#7B7D82'></hr>
+        <div className="iframe-container">
         <iframe src='https://player.vimeo.com/video/406106876?byline=0&portrait=0'
         frameborder='0'
         allow='autoplay; encrypted-media'
@@ -74,11 +74,11 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
     
         
         <p style={{fontWeight:'300'}}>Wearble dietary documentation device<br/>
-        <hr class="solid" color='#7B7D82'></hr>
+        <hr className="solid" color='#7B7D82'></hr>
           <strong>IBM Watson , Python, C/C++, Embedded Systems</strong><br/>
-          <hr class="solid" color='#7B7D82'></hr>
+          <hr className="solid" color='#7B7D82'></hr>
           <br/>
-          <div class="iframe-container">
+          <div className="iframe-container">
           <iframe src='https://player.vimeo.com/video/335656889?byline=0&portrait=0'
         frameborder='0'
         allow='autoplay; encrypted-media'
@@ -105,11 +105,11 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
     
         
         <p style={{fontWeight:'300'}}>Developed automated guitar tuning software & handheld knob-turning device<br/>
-        <hr class="solid" color='#7B7D82'></hr>
+        <hr className="solid" color='#7B7D82'></hr>
           <strong>Matlab, Arduino, Signal Processing</strong><br/>
-          <hr class="solid" color='#7B7D82'></hr>
+          <hr className="solid" color='#7B7D82'></hr>
           <br/>
-          <div class="iframe-container">
+          <div className="iframe-container">
           <iframe src='https://player.vimeo.com/video/306698121?byline=0&portrait=0'
         frameborder='0'
         allow='autoplay; encrypted-media'

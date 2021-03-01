@@ -20,7 +20,7 @@ class BlogPage extends Component {
       
     return (
         <div className='d-flex justify-content-md-center'>
-        <div class="" style={{maxWidth:'750px', marginTop:'50px', justifyContent:'center'}}>
+        <div className="" style={{maxWidth:'750px', marginTop:'50px', justifyContent:'center'}}>
             {/* <Spotlight title={props.title} text={props.subtitle} /> */}
         
             <div className="content">

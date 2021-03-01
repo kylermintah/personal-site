@@ -41,9 +41,9 @@ return (<VerticalTimeline className='k-overflow' layout='1-columns' >
     // <FontAwesomeIcon className='fas fa-lg'  icon={faGraduationCap} />}
   >
       
-    <div class="content">
+    <div className="content">
   {/* <img src="https://branding.web-resources.upenn.edu/sites/default/files/simplified-shield-final%20%285%29.png" alt='University of Pennsylvania logo' height={70}/> */}
-  <div class="text">
+  <div className="text">
     <h3 style={{fontWeight:'lighter'}}>Class of 2020 Graduate</h3>
     <h4><strong>University of Pennsylvania</strong></h4>
     <p style={{fontWeight:'300'}}>B.S.E Electrical Engineering <br/> Computer Science minor</p>
