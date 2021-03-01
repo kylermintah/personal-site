@@ -10,7 +10,7 @@ class BlogPage extends Component {
     this.state = { terms: null }
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     fetch(yamlTemplatePath).then((response) => response.text()).then((text) => {
       this.setState({ terms: text })
     })
