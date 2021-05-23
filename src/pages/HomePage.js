@@ -3,7 +3,7 @@ import React from 'react';
 import SocialLinks from '../components/SocialLinks';
 import Spotlight from '../components/Spotlight';
 // import ParticlesBg from 'particles-bg';
-import kyler from '../assets/kyler.png'
+
 
 function HomePage(props) {
 

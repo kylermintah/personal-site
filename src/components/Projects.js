@@ -4,7 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faMicrosoft, faGoogle } from '@fortawesome/free-brands-svg-icons'
 // import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
-import { Container, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import {Chip} from '@material-ui/core';
 import clc from '../assets/clc.png';
 import tito from '../assets/tito-mockup.png';
@@ -45,7 +45,7 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
   
         <hr className="solid" color='#7B7D82'></hr>
         <div >
-        <img style={{maxWidth:'20em',}} src = 'https://user-images.githubusercontent.com/24496327/119276109-00314300-bbe7-11eb-85f7-8415cc059807.gif'></img>
+        <img style={{maxWidth:'20em',}} src = 'https://user-images.githubusercontent.com/24496327/119276109-00314300-bbe7-11eb-85f7-8415cc059807.gif' alt='wedoo screen recordings'></img>
         </div>
         <br></br>
        <a className='link' href='https://www.wedoo.app' target='_blank' rel='noreferrer'> <Chip label={<strong>Learn more about Wedoo</strong>} color="blue"></Chip></a><br/>

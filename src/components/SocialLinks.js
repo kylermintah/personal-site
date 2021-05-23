@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
-import Card from './Card';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaVimeo } from 'react-icons/fa';
