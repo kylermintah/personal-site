@@ -29,7 +29,7 @@ class App extends React.Component {
       home: {
         title: 'Kyler Mintah',
         subtitle: '',
-        text: 'Customer Engineer | Developer ',
+        text: 'Customer Engineer | Developer | Creative ',
       },
       about: {
         title: 'About Me',
@@ -47,8 +47,8 @@ class App extends React.Component {
         text: '',
       },
       garden: {
-        title: 'Digital Garden 🌱',
-        subtitle: 'A collection of my thoughts, how-tos and budding ideas',
+        title: 'Blog',
+        subtitle: 'thoughts, how-tos and ideas',
         text: '',
       }
     }
@@ -69,7 +69,7 @@ class App extends React.Component {
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className='ml-auto'>
-                <Link className='nav-link' to='/garden'>Digital Garden</Link>
+                <Link className='nav-link' to='/blog'>Blog</Link>
                 <Link className="nav-link" to="/">Home</Link>
                 <Link className='nav-link' to='/about'>About</Link>
                 <Link className='nav-link' to='/projects'>Projects</Link>
@@ -82,7 +82,7 @@ class App extends React.Component {
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text} />} />
           <Route path="/about" exact render={() => <AboutPage title={this.state.about.title} subtitle={this.state.about.subtitle} />} />
           <Route path="/projects" exact render={() => <ProjectPage title={this.state.projects.title} subtitle={this.state.projects.subtitle} />} />
-          <Route path="/garden" exact render={() => <DigitalGardenPage title={this.state.garden.title} subtitle={this.state.garden.subtitle}/>} />
+          <Route path="/blog" exact render={() => <DigitalGardenPage title={this.state.garden.title} subtitle={this.state.garden.subtitle}/>} />
           <Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title} />} />
           <Route path="/yaml-templates" exact render={() => <BlogPage  />} />
 

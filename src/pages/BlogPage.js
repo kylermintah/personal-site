@@ -3,21 +3,23 @@ import ReactMarkdown from 'react-markdown'
 import yamlTemplatePath from '../articles/yaml-templates/yaml-templates.md'
 import {CodeBlock, HeadingRenderer} from '../articles/utils'
 
+
+
 class BlogPage extends Component {
   constructor(props) {
     super(props)
 
-    this.state = { terms: null }
+    this.state = { terms: props }
   }
 
   componentDidMount() {
-    fetch(yamlTemplatePath).then((response) => response.text()).then((text) => {
-      this.setState({ terms: text })
-    })
+    
   }
 
   render() {
-      
+    fetch(yamlTemplatePath).then((response) => response.text()).then((text) => {
+      this.setState({ terms: text })
+    })
     return (
         <div className='d-flex justify-content-md-center'>
         <div className="" style={{maxWidth:'750px', marginTop:'50px', justifyContent:'center'}}>

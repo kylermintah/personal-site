@@ -1,12 +1,15 @@
 import React from 'react';
-import Carousel from '../components/Carousel';
+// import Carousel from '../components/Carousel';
+import SocialLinks from '../components/SocialLinks';
 import Spotlight from '../components/Spotlight';
+// import ParticlesBg from 'particles-bg';
+
 
 function HomePage(props) {
 
     return (
-        <div>
-            {/* <ParticlesBg type="custom" bg={true}> */}
+        <div className="grid-container ">
+            {/* <ParticlesBg type="fountain" bg={true}/> */}
                 {/* Particle Types
               "color"
               "ball"
@@ -19,10 +22,17 @@ function HomePage(props) {
               "tadpole"
               "fountain"
               "random"
-            //   "custom" */}
-            
+              "custom" */}
+            <div  className="grid-child">
             <Spotlight title={props.title} subtitle={props.subtitle} text={props.text} />
-            <Carousel />
+            </div>
+
+           <div  className="grid-child">
+            {/* <img  src={kyler} height="140px" alt="Kyler"/> */}
+            </div>
+            
+            
+            <SocialLinks />
         </div>
     )
 
