@@ -87,6 +87,7 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
         <p style={{fontWeight:'300'}}>
         A snap-on wearable solution for selective noise filtering <br/>
         <hr className="solid" color='#7B7D82'></hr>
+<<<<<<< HEAD
         <Row style={{ padding: "0%", justifyContent: 'space-evenly' }}>
                    
 
@@ -98,6 +99,9 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
   
         </Row>
 
+=======
+        <strong>Kotlin, Python, Embedded Systems, Singal Processing</strong> <br/>
+>>>>>>> stable
         <hr className="solid" color='#7B7D82'></hr>
         <div className="iframe-container">
         <iframe src='https://player.vimeo.com/video/406106876?byline=0&portrait=0'
@@ -136,6 +140,7 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
         
         <p style={{fontWeight:'300'}}>Wearble dietary documentation device<br/>
         <hr className="solid" color='#7B7D82'></hr>
+<<<<<<< HEAD
           <Row style={{ padding: "0%", justifyContent: 'space-evenly' }}>
                     
 
@@ -146,6 +151,9 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
           <Chip label='Embedded Systems'></Chip>
     
           </Row>
+=======
+          <strong>IBM Watson , Python, C/C++, Embedded Systems</strong><br/>
+>>>>>>> stable
           <hr className="solid" color='#7B7D82'></hr>
           <br/>
           <div className="iframe-container">
@@ -176,6 +184,7 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
         
         <p style={{fontWeight:'300'}}>Developed automated guitar tuning software & handheld knob-turning device<br/>
         <hr className="solid" color='#7B7D82'></hr>
+<<<<<<< HEAD
         <Row style={{ padding: "0%", justifyContent: 'space-evenly' }}>
                    
 
@@ -184,6 +193,9 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
           <Chip label='Arduino'></Chip>
           <Chip label='Signal Processing'></Chip>
         </Row>
+=======
+          <strong>Matlab, Arduino, Signal Processing</strong><br/>
+>>>>>>> stable
           <hr className="solid" color='#7B7D82'></hr>
           <br/>
           <div className="iframe-container">
