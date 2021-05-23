@@ -76,7 +76,7 @@ return (<VerticalTimeline className='k-overflow' layout='1-columns' >
     className="vertical-timeline-element--work"
     date="Jan 2019 - May 2020"
     iconStyle={{ background: '#fff', color: '#fff' }}
-    icon={<img className='vertical-timeline-element-icon bounce-in'  src="https://media-exp1.licdn.com/dms/image/C4E0BAQFGFNmrO7AKNg/company-logo_100_100/0/1553536363764?e=1619654400&v=beta&t=f0i8545Sltuqy3CBrffP-RHjHBAeWYXK1Fb9LnhIqe4" alt='Google logo' height={55}/>}
+    icon={<img className='vertical-timeline-element-icon bounce-in'  src="https://media-exp1.licdn.com/dms/image/C4E0BAQFGFNmrO7AKNg/company-logo_200_200/0/1553536363764?e=1629936000&v=beta&t=M3kom4STSrJpbiCZtIWPXQ1vr8pVje7JsqAmyPV0tHc" alt='Google logo' height={55}/>}
     // icon={
     // <FontAwesomeIcon className='fas fa-lg' icon={faGoogle} />}
   >

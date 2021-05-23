@@ -8,11 +8,11 @@
 <br>
 
 In this piece we explore a technique for YAML pipeline modularization in Azure DevOps using YAML templates.  <br><br>
-In a development team, or in your project, there are a few reasosn as to why you may consider using templates for your pipelines.
+In a development team, or in your project, there are a few reasons as to why you may consider using templates for your pipelines.
 
 Organizing your pipeline into multiple files in your version control system may allow for ease of substitution & reuse of each  `job / stage / step`.
 
-From the perspective of practical collaboration - this also enables ease of code reviews on individual pipeline segments, as well as the separation of pipeline segment responsibility to different team members within your codebase (e.g. build, QA, release etc). 
+From the perspective of practical collaboration - this also enables ease of code reviews on individual pipeline segments, as well as the separation of pipeline segment responsibility to different team members within your codebase (e.g. build, QA, release etc.). 
 
 [You can read more about pipeline templates here](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops).
 
@@ -24,7 +24,7 @@ From the perspective of practical collaboration - this also enables ease of code
 
 <br>
 
-In this example, I will be building and releasing the **`PartsUnlimited`** tempalte website from the ADO Demo Generator through the use of a pipeline built using multiple YAML files.  
+In this example, I will be building and releasing the **`PartsUnlimited`** template website from the ADO Demo Generator through the use of a pipeline built using multiple YAML files.  
 
 
 Here are the requirements one should take note of in order to complete these steps:
@@ -38,7 +38,7 @@ Here are the requirements one should take note of in order to complete these ste
   
   * **Azure Service Connection** - to use Azure resources you will also need [a valid service connection](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#create-a-service-connection).  
   
-  * **YAML for ADO Pipelines** - In the example below we will be using pure yaml for our ADO build & release pipeline. Make sure you are at least familiar with this process. [Pipeline basics](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops) & [YAML schema](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema) for reference.
+  * **YAML for ADO Pipelines** - In the example below we will be using pure YAML for our ADO build & release pipeline. Make sure you are at least familiar with this process. [Pipeline basics](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops) & [YAML schema](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema) for reference.
 
 <br>  
 <hr /> 
@@ -50,18 +50,18 @@ Here are the requirements one should take note of in order to complete these ste
 
 Before we create our Pipeline, we need to create the following YAML files in our project directory:
   * `azure-pipelines.yaml` - create in `root` directory 
-  * `build.yaml` - create in `./pipeine-templates` directory 
-  * `release.yaml` - create in `./pipeine-templates` directory 
+  * `build.yaml` - create in `./pipeline-templates` directory 
+  * `release.yaml` - create in `./pipeline-templates` directory 
 
 <br>
 
-#### **The Main Pipeline File** 🛠
+### **The Main Pipeline File** 🛠
 <br>
 
 We will use the **`azure-pipelines.yaml`** file as our top-level YAML file. 
 
 **This is the file we will directly link to our Pipeline.**
-In this file, we specify the tempalte files to use for the individual pipeline stages. _See line 11 & 12_.
+In this file, we specify the template files to use for the individual pipeline stages. _See line 11 & 12_.
 
 We use the `build.yaml` template file for our build stage, and the `release.yaml` template file for our release stage :-)
 
@@ -73,7 +73,7 @@ Also note, that in our release stage, we need to pass parameters from our [Pipel
 
 ```yaml
 # File: azure-pipelines.yaml
-# This is the top-level yaml file that will orchestrate the pipeline
+# This is the top-level YAML file that will orchestrate the pipeline
 
 trigger:
 - main
@@ -99,7 +99,7 @@ stages:
 <br>
 <br>
 
-#### **The Build Stage** 📦
+### **The Build Stage** 📦
 <br>
 
 Here we examine the **`build.yaml`** template file.  
@@ -175,7 +175,7 @@ stages:
 <br>
 <br>
 
-#### **The Release Stage** 🏷
+### **The Release Stage** 🏷
 <br>
 
 Here we examine the **`release.yaml`** template file.  
@@ -256,7 +256,7 @@ stages:
 <br>
 <br>
 
-#### **Select Main YAML file** 📃
+### **Select Main YAML file** 📃
 
 <br>
 
@@ -269,7 +269,7 @@ Select **`azure-pipelines.yaml`** from the **Path** dropdown as shown below.
 
 <br>
 
-#### **The Result** 🎯
+### **The Result** 🎯
 <br>
 
 After executing your pipeline, you should see the two stages **`Build`** & **`Deploy`**.

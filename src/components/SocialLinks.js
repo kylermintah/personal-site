@@ -1,12 +1,13 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Card from './Card';
+import { AiFillGithub } from 'react-icons/ai';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaVimeo } from 'react-icons/fa';
 
-import headshot from '../assets/headshot-reduced.jpg'
-import eventhopper from '../assets/eventhopper.gif'
-import kojo from '../assets/kojo.gif'
 
-export class Carousel extends React.Component {
+
+export class SocialLinks extends React.Component {
 
     constructor(props) {
         super(props);
@@ -14,27 +15,21 @@ export class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: 'Technical Projects',
-                    subtitle: 'hardware, full-stack and more',
-                    image: eventhopper,
+                    site: 'GitHub',
+                    icon: <AiFillGithub />,
                     link: 'https://github.com/kylermintah',
-                    selected: false
                 },
                 {
                     id: 1,
-                    title: 'Kyler Mintah',
-                    subtitle: 'more about me',
-                    image: headshot,
+                    site: 'LinkedIn',
+                    icon: <FaLinkedin/>,
                     link: 'https://www.linkedin.com/in/kyler-mintah-399b78121/',
-                    selected: false
                 },
                 {
                     id: 2,
-                    title: 'Creative Projects',
-                    subtitle: 'photography, animation and more',
-                    image: kojo,
+                    site: 'Vimeo',
+                    icon: <FaVimeo/>,
                     link: 'https://vimeo.com/user73148798',
-                    selected: false
                 },
 
             ]
@@ -52,21 +47,20 @@ export class Carousel extends React.Component {
         });
         this.setState({
             items
-            
         });
     }
 
     makeItems = (items) => {
         return items.map(item => {
-            return <Card item={item} onHover={(e => this.handleCardHover(item.id, e))} key={item.id} />
+            return <h1 style={{fontSize:'6em'}}><a href={item.link} target="_blank" rel="noreferrer">{item.icon}</a></h1>;
         })
 
     }
 
     render() {
         return (
-            <Container fluid={true} >
-                <Row style={{ padding: "3%", justifyContent: 'space-evenly', }}>
+            <Container fluid={true} style={{maxWidth:'600px'}}>
+                <Row style={{ padding: "3%", justifyContent: 'space-evenly' }}>
                     {this.makeItems(this.state.items)}
                 </Row>
             </Container>);
@@ -74,4 +68,4 @@ export class Carousel extends React.Component {
 
 }
 
-export default Carousel;
+export default SocialLinks;

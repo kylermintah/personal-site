@@ -91,15 +91,6 @@ color:rgb(255, 255, 255);
   background-size: cover;
 }
 
-/* .k-card:hover ~.k-card-info{
-  display: block;
-  font-size:10px;
-  min-height: 100px;
-  margin-top: 0%;
-  padding: 0%;
-  opacity:1;
-} */
-
 .k-card-title{
   font-size:24px;
   margin: 0px;
@@ -167,3 +158,8 @@ color:rgb(255, 255, 255);
     margin-top: -200px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
