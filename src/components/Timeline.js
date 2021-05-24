@@ -66,7 +66,8 @@ return (<VerticalTimeline className='k-overflow' layout='1-columns' >
     <p style={{fontWeight:'300'}}>
       Google Pixel Team<br></br>
       Contributed 5,000+ loc to team codebase<br></br>
-      Two projects with focus on Bluetooth power optimization, testing & development ahead of Pixel 4 and Android 10 rollout<br></br>
+      Two Android projects with focus on Bluetooth power optimization, testing & development ahead of Pixel 4 and Android 10 rollout<br></br>
+      Skills: Software Engineering, Android, Java, C++, Python<br></br>
     </p>
     <div style={{position: 'relative', marginLeft:-150}}>
     <img src = {bike} height={250} alt='animation I drew of me riding a bike during the Summer of 2020. Was my main method of transportation then.'/>
