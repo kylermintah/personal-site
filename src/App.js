@@ -38,13 +38,13 @@ class App extends React.Component {
       },
       projects: {
         title: 'What keeps me busy',
-        subtitle: 'Projects I\'ve been able to work on solo and with extraordinary teammates',
+        subtitle: 'Projects I\'ve been able to work on in my free time and with brilliant teammates!',
         text: '',
       },
       contact: {
-        title: 'Get in touch!',
-        subtitle: '',
-        text: '',
+        title: 'Get in touch',
+        subtitle: 'Feel free to reach out! 📫',
+        text: 'Have an inquiry? Feel free to reach out! 📫',
       },
       garden: {
         title: 'Blog',
@@ -83,7 +83,7 @@ class App extends React.Component {
           <Route path="/about" exact render={() => <AboutPage title={this.state.about.title} subtitle={this.state.about.subtitle} />} />
           <Route path="/projects" exact render={() => <ProjectPage title={this.state.projects.title} subtitle={this.state.projects.subtitle} />} />
           <Route path="/blog" exact render={() => <DigitalGardenPage title={this.state.garden.title} subtitle={this.state.garden.subtitle}/>} />
-          <Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title} />} />
+          <Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title} text = {this.state.contact.text} />} />
           <Route path="/yaml-templates" exact render={() => <BlogPage  />} />
 
           <Footer className='footer' >
