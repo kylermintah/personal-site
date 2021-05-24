@@ -1,9 +1,6 @@
 import * as React from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faMicrosoft, faGoogle } from '@fortawesome/free-brands-svg-icons'
-// import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { Row } from 'react-bootstrap';
 import {Chip} from '@material-ui/core';
 import clc from '../assets/clc.png';
@@ -17,7 +14,7 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
     
     contentStyle={{ background: '#2D364F', color: '#fff', }}
     contentArrowStyle={{ borderRight: '7px solid #3A465C' }}
-    date="Summer 2020"
+    date="Summer 2020 - Present"
     dateClassName='k-date-2'
     iconStyle={{ background: '#fff', color: '#fff',}}
     icon={<img className='vertical-timeline-element-icon bounce-in' src='https://user-images.githubusercontent.com/24496327/119273543-6c0caf00-bbd9-11eb-8193-8c666ef741f2.png' alt='University of Pennsylvania logo' height={55}/>}
@@ -25,11 +22,14 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
   >
    
     <h3 className="vertical-timeline-element-title" style={{fontWeight:'lighter'}}>WEDOO</h3>
-    <h4 className="vertical-timeline-element-subtitle"><strong>Real-Time Group ToDo List</strong></h4>
+    <h4 className="vertical-timeline-element-subtitle"><strong>Real-Time Group ToDo List 📱✏</strong></h4>
     <p>Android/iOS App</p>
 
         <p style={{fontWeight:'300'}}>
-        A mobile app that makes it easy to collaborate on real-time tasks. Use cases include shopping for groceries in supernarket, running errands and more. <br/>
+        I grew tired of using our groupchat to keep track of groceries and errand planning.
+        I thought it would be fun to build a mobile app that makes it easy to collaborate on tasks in real-time. 
+        Has been helpful so far on group trips to the supermarket!
+        Currently being used by some family & friends. <br/>
         <hr className="solid" color='#7B7D82'></hr>
      
         <Row style={{ padding: "0%", justifyContent: 'space-evenly',}}>
@@ -48,7 +48,61 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
         <img style={{maxWidth:'20em',}} src = 'https://user-images.githubusercontent.com/24496327/119276109-00314300-bbe7-11eb-85f7-8415cc059807.gif' alt='wedoo screen recordings'></img>
         </div>
         <br></br>
-       <a className='link' href='https://www.wedoo.app' target='_blank' rel='noreferrer'> <Chip label={<strong>Learn more about Wedoo</strong>} color="blue"></Chip></a><br/>
+        <strong>Reach out if you're interested in developing Wedoo further!</strong>
+        <br></br>
+        <br></br>
+       <a className='link' href='https://www.wedoo.app' target='_blank' rel='noreferrer'> <Chip label={<strong>Learn more about Wedoo</strong>} color="primary"></Chip></a><br/><br/>
+      </p>
+        
+  </VerticalTimelineElement>
+
+
+
+
+<VerticalTimelineElement
+    
+    contentStyle={{ background: '#2D364F', color: '#fff', }}
+    contentArrowStyle={{ borderRight: '7px solid #3A465C' }}
+    date="Summmer 2021 - Present"
+    dateClassName='k-date-2'
+    iconStyle={{ background: '#fff', color: '#fff',}}
+    icon={<img className='vertical-timeline-element-icon bounce-in' src='https://i.redd.it/o5wgkhoqkem31.png' alt='University of Pennsylvania logo' height={55}/>}
+
+  >
+   
+    <h3 className="vertical-timeline-element-title" style={{fontWeight:'lighter'}}>Project MForge</h3>
+    <h4 className="vertical-timeline-element-subtitle"><strong>Game Development Project 🕹</strong></h4>
+    <p>Blender & Unity Engine</p>
+
+        <p style={{fontWeight:'300'}}>
+        Since 2018 I have spent time writing, illustrating and animating a story inspired by African folklore. 
+        This year I have chosen a medium through which I would like to share this story - a video game!
+        Over the Summer I have been slowly building up experience in 3D Modeling, 3D Animation and Unity. Stay tuned! <br/>
+        <hr className="solid" color='#7B7D82'></hr>
+     
+        <Row style={{ padding: "0%", justifyContent: 'space-evenly',}}>
+                   
+
+        <Chip label='Blender'></Chip>
+        <Chip label='Unity'></Chip>
+        <Chip label='C#'></Chip>
+        <Chip label='Game Development'></Chip>
+        <Chip label='Multimedia Design'></Chip>
+  
+        </Row>
+  
+        <hr className="solid" color='#7B7D82'></hr>
+        <div className="iframe-container">
+                <iframe src='https://player.vimeo.com/video/554077071?byline=0&portrait=0&loop=1&autoplay=1'
+                frameborder='0'
+                allow='autoplay; encrypted-media'
+                allowfullscreen
+                title='video'
+        />        
+        </div>
+        <br></br>
+        <br></br>
+      <Chip label={<strong>More on this soon</strong>} color="primary"></Chip>
         <br/><br/>
       </p>
         
@@ -88,7 +142,6 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
         A snap-on wearable solution for selective noise filtering <br/>
         <hr className="solid" color='#7B7D82'></hr>
         <Row style={{ padding: "0%", justifyContent: 'space-evenly' }}>
-                   
 
         <Chip label='Kotlin'></Chip>
         <Chip label='Python'></Chip>
@@ -97,7 +150,7 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
         <Chip label='Signal Processing'></Chip>
   
         </Row>
-
+        
         <hr className="solid" color='#7B7D82'></hr>
         <div className="iframe-container">
         <iframe src='https://player.vimeo.com/video/406106876?byline=0&portrait=0'
@@ -107,9 +160,10 @@ return (<VerticalTimeline className='k-overflow' layout='2-columns' >
         title='video'
         /></div>
         <br></br>
-        <a className='link' href='https://penntoday.upenn.edu/news/home-still-engaged-stem-classes#content:~:text=Celebrating%20seniors' target='_blank' rel='noreferrer'> <Chip label={<strong>Read Penn Today Article</strong>} color="blue"></Chip></a><br/>
         <br></br>
-        <a className='link' href='https://devpost.com/software/tune-in-tune-out' target='_blank' rel='noreferrer'> <Chip label={<strong>Visit Project Site</strong>} color="blue"></Chip></a><br/>
+        <a className='link' href='https://devpost.com/software/tune-in-tune-out' target='_blank' rel='noreferrer'> <Chip label={<strong>Visit Project Site</strong>} color="primary"></Chip></a><br/>
+        <br></br>
+        <a className='link' href='https://penntoday.upenn.edu/news/home-still-engaged-stem-classes#content:~:text=Celebrating%20seniors' target='_blank' rel='noreferrer'> <Chip label={<strong>Read Penn Today Article</strong>} color="primary"></Chip></a><br/>
         <br/><br/>
         Teammate(s):<strong>
         <a className='link' href='https://celine-lee.github.io/index.html#about' target='_blank' rel='noreferrer'> Celine Lee</a>, 
