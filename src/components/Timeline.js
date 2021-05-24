@@ -26,7 +26,7 @@ return (<VerticalTimeline className='k-overflow' layout='1-columns' >
     <p>Dallas, TX</p>
     
         
-        <p style={{fontWeight:'300'}}>DevOps Specialist<br/>
+        <p style={{fontWeight:'300'}}>Developer <br/>
         Azure Apps & Infrastructure<br/>
         Customer-Facing Development<br/>
         </p>
