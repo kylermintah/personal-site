@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -42,8 +42,8 @@ export const Button = styled.button`
   margin-top: auto;
   width: 100%;
   color: #fff;
-  background-color: #0CA656;
-  border-color: #0CA656;
+  background-color: #0ca656;
+  border-color: #0ca656;
   display: block;
   font-weight: bold;
   text-align: center;
@@ -58,7 +58,7 @@ export const Button = styled.button`
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   &:hover {
     color: #fff;
-    background-color: #5DC38E;
-    border-color: #5DC38E;
+    background-color: #5dc38e;
+    border-color: #5dc38e;
   }
 `;
