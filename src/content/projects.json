@@ -1,0 +1,175 @@
+[
+  {
+    "id": "wedoo",
+    "icon": "https://user-images.githubusercontent.com/24496327/119273543-6c0caf00-bbd9-11eb-8193-8c666ef741f2.png",
+    "icon_alt": "Wedoo Logo",
+    "title": "WEDOO",
+    "date": "Summer 2020 - Present",
+    "subtitle": "Real-Time Group ToDo List 📱✏️",
+    "category": "Android/iOS App",
+    "highlight": "",
+    "description": "I grew tired of using our groupchat to keep track of groceries and errand planning. I thought it would be fun to build a mobile app that makes it easy to collaborate on tasks in real-time. Has been helpful so far on group trips to the supermarket! Currently being used by some family & friends.",
+    "image": "https://user-images.githubusercontent.com/24496327/119276109-00314300-bbe7-11eb-85f7-8415cc059807.gif",
+    "iframe_embed_link": "",
+    "skills": [
+      "Flutter",
+      "Firebase",
+      "Node.js",
+      "GitHub API",
+      "Stream Processing"
+    ],
+    "action_heading": "Reach out if you're interested in developing Wedoo further!",
+    "actions": [
+      {
+        "text": "Learn more about Wedoo",
+        "link": "https://www.wedoo.app/"
+      }
+    ],
+    "teammates": []
+  },
+
+  {
+    "id": "toa",
+    "icon": "https://i.redd.it/o5wgkhoqkem31.png",
+    "icon_alt": "Unity logo",
+    "title": "Project MForge",
+    "date": "Summer 2021 - Present",
+    "subtitle": "Game Development Project 🕹️",
+    "category": "Blender & Unity Engine",
+    "highlight": "",
+    "description": "Since 2018 I have spent time writing, illustrating and animating a story inspired by African folklore. This year I have chosen a medium through which I would like to share this story - a video game! Over the Summer I have been slowly building up experience in 3D Modeling, 3D Animation and Unity. Stay tuned!",
+    "image": "",
+    "iframe_embed_link": "https://player.vimeo.com/video/554077071?byline=0&portrait=0&loop=1&autoplay=1",
+    "skills": [
+      "Blender",
+      "Unity",
+      "C#",
+      "Game Deveopment",
+      "Multimedia Design"
+    ],
+    "action_heading": "More on this soon!",
+    "actions": [],
+    "teammates": []
+  },
+
+  {
+    "id": "upenn-projects-below",
+    "icon": "https://branding.web-resources.upenn.edu/sites/default/files/simplified-shield-final%20%285%29.png",
+    "icon_alt": "University of Pennsylvania Logo",
+    "title": "University of Pennsylvania",
+    "date": "",
+    "category": "⬇️ Projects undertaken during college ⬇️",
+    "highlight": "",
+    "subtitle": "",
+    "description": "",
+    "image": "",
+    "iframe_embed_link": "",
+    "action_heading": "",
+    "actions": [],
+    "teammates": [],
+    "marker": "true"
+  },
+
+  {
+    "id": "tito",
+    "icon": "https://kylermintah.netlify.app/static/media/tito-mockup.ed42e87b.png",
+    "icon_alt": "TITO Logo",
+    "title": "TITO",
+    "date": "Fall'19 - Spring'20",
+    "subtitle": "Tune In, Tune Out 🎧",
+    "category": "ESE Senior Design Project",
+    "highlight": "Ketterer Memorial Prize Winning Project 🎉",
+    "description": "A snap-on wearable solution for selective noise filtering",
+    "image": "",
+    "iframe_embed_link": "https://player.vimeo.com/video/406106876?byline=0&portrait=0",
+    "skills": [
+      "Kotlin",
+      "Python",
+      "Firebase",
+      "Embedded Systems",
+      "Signal Processing"
+    ],
+    "action_heading": "",
+    "actions": [
+      {
+        "text": "Visit Project Site",
+        "link": "https://devpost.com/software/tune-in-tune-out"
+      },
+      {
+        "text": "Read Penn Today Article",
+        "link": "https://penntoday.upenn.edu/news/home-still-engaged-stem-classes#:~:text=Celebrating,Africa"
+      }
+    ],
+    "teammates": [
+      {
+        "name": "Celine Lee",
+        "link": "https://celine-lee.github.io/index.html#about"
+      },
+      {
+        "name": "A.J. Geers",
+        "link": "https://aj-geers.github.io/"
+      },
+      {
+        "name": "Ransford Antwi",
+        "link": "https://www.ransfordantwi.com/"
+      }
+    ]
+  },
+
+  {
+    "id": "clc",
+    "icon": "https://kylermintah.netlify.app/static/media/clc.d09366be.png",
+    "icon_alt": "Calorie Life cam model picture",
+    "title": "Automatic Guitar Tuner",
+    "date": "Fall'18",
+    "subtitle": "Embedded Systems Project",
+    "category": "ESE 350",
+    "highlight": "",
+    "description": "Wearble dietary documentation device",
+    "image": "",
+    "iframe_embed_link": "https://player.vimeo.com/video/335656889?byline=0&portrait=0",
+    "skills": [
+      "C/C++",
+      "Python",
+      "IBM Watson API",
+      "Circuits",
+      "Embedded Systems"
+    ],
+    "action_heading": "",
+    "actions": [
+      {
+        "text": "View on GitHub",
+        "link": "https://kylermintah.github.io/CalorieLifeCam/"
+      }
+    ],
+    "teammates": [
+      {
+        "name": "Ransford Antwi",
+        "link": "https://www.ransfordantwi.com/"
+      }
+    ]
+  },
+
+  {
+    "id": "guitar-tuner",
+    "icon": "https://cdn11.bigcommerce.com/s-e3wpevzfi1/images/stencil/960w/products/1982/35541/Taylor-GSmini-Rosewood-2__13131.1606329435.jpg?c=2",
+    "icon_alt": "guitar image",
+    "title": "Automatic Guitar Tuner",
+    "date": "Fall'18",
+    "subtitle": "Embedded Systems Project",
+    "category": "ESE 350",
+    "highlight": "",
+    "description": "Wearble dietary documentation device",
+    "image": "",
+    "iframe_embed_link": "https://player.vimeo.com/video/306698121?byline=0&portrait=0",
+    "skills": ["MATLAB", "SolidWorks CAD", "Arduino", "Signal Processing"],
+    "action_heading": "",
+    "actions": [],
+    "teammates": [
+      {
+        "name": "Andrew Adallah",
+        "link": "https://www.linkedin.com/in/andrew-adallah-a58876136/"
+      }
+    ]
+  }
+]

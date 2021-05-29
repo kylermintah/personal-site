@@ -4,14 +4,13 @@ import moment from "moment";
 import { withRouter } from "react-router-dom";
 
 function ShowBlog(props, p) {
-
   function ToText(node) {
-        let tag = document.createElement("div");
-        tag.innerHTML = node;
-        node = tag.innerText;
-        return node;
-    }
- 
+    let tag = document.createElement("div");
+    tag.innerHTML = node;
+    node = tag.innerText;
+    return node;
+  }
+
   return (
     <div className={`col-md-4 col-sm-6 col-xs-12 ${c.grid}`}>
       <div className={c.cardsmall}>
@@ -19,7 +18,6 @@ function ShowBlog(props, p) {
           className={c.cardpost__image}
           style={{ backgroundImage: `url(${props.thumbnail})` }}
         >
-
           <div className={c.authorimg}>
             <a
               href={props.profileurl}
@@ -34,18 +32,22 @@ function ShowBlog(props, p) {
 
         <div className="card-body">
           <h5 className="card-title">
-             <a
+            <a
               href={props.link}
               rel="noopener noreferrer"
               target="_blank"
               className={c.textfiordblue}
-            > {ToText(props.title)} </a>
-           
+            >
+              {" "}
+              {ToText(props.title)}{" "}
+            </a>
           </h5>
 
-          <p className={c.cardText}>{`${ToText(
-            props.description.substring(0, 1000)
-          )}...`.padStart(1000-((props.description.substring(0,1000)).length))}</p>
+          <p className={c.cardText}>
+            {`${ToText(props.description.substring(0, 1000))}...`.padStart(
+              1000 - props.description.substring(0, 1000).length
+            )}
+          </p>
           <br />
 
           <span className="text-dark">
@@ -54,7 +56,6 @@ function ShowBlog(props, p) {
               focusable="false"
               data-prefix="fas"
               data-icon="user"
-
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -74,7 +75,6 @@ function ShowBlog(props, p) {
               focusable="false"
               data-prefix="fas"
               data-icon="calendar-alt"
-
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"

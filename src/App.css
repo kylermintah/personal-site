@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +34,3 @@
     transform: rotate(360deg);
   }
 }
-

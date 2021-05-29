@@ -1,17 +1,18 @@
 import * as React from "react";
 // import { ArticleCard } from './ArticleCard';
 // import styles from './styles/Garden.module.scss';
-import Blog from '../Medium/Blog';
+import Blog from "../Medium/Blog";
 
 // import articles from '../../articles/articles.json'
 
 export function Garden(props) {
-    return (
-     
-          <main >
-            <div><Blog/></div>
-          
-          {/* {articles.map(article => (
+  return (
+    <main>
+      <div>
+        <Blog />
+      </div>
+
+      {/* {articles.map(article => (
             <ArticleCard className ={styles.mr} key={`${article.id}`}>
               <ArticleCard.Image src={article.image} alt = {article.Button}/>
               <ArticleCard.Body>
@@ -21,12 +22,8 @@ export function Garden(props) {
               </ArticleCard.Body>
             </ArticleCard>
           ))} */}
-    
-        </main>        
-   
-
-    
-    )
+    </main>
+  );
 }
 
 export default Garden;
