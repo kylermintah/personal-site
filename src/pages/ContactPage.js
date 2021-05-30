@@ -1,6 +1,6 @@
-import React from "react";
-import Content from "../components/Content";
-import Spotlight from "../components/Spotlight";
+import React from 'react'
+import Content from '../components/Content'
+import Spotlight from '../components/Spotlight'
 
 function ContactPage(props) {
   return (
@@ -12,7 +12,7 @@ function ContactPage(props) {
       />
 
       <Content>
-        You can email me at:{" "}
+        You can email me at:{' '}
         <a
           href="mailto:kylermintah@gmail.com?subject=[Reaching Out]"
           className=".App-link"
@@ -21,7 +21,7 @@ function ContactPage(props) {
         </a>
       </Content>
     </div>
-  );
+  )
 }
 
-export default ContactPage;
+export default ContactPage
