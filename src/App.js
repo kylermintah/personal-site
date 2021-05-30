@@ -1,56 +1,57 @@
-import React from "react";
-import { HashRouter as Router, Route, Link } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+import React from 'react'
+import { HashRouter as Router, Route, Link, Switch } from 'react-router-dom'
+import Container from 'react-bootstrap/Container'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 
-import "./App.css";
-import { Footer } from "./components/";
-import HomePage from "./pages/HomePage";
-import ContactPage from "./pages/ContactPage";
-import BlogPage from "./pages/BlogPage";
-import DigitalGardenPage from "./pages/DigitalGardenPage";
-import AboutPage from "./pages/AboutPage";
-import ProjectPage from "./pages/ProjectPage";
+import './App.css'
+import { Footer } from './components/'
+import HomePage from './pages/HomePage'
+import ContactPage from './pages/ContactPage'
+import BlogPage from './pages/BlogPage'
+import DigitalGardenPage from './pages/DigitalGardenPage'
+import AboutPage from './pages/AboutPage'
+import ProjectPage from './pages/ProjectPage'
+import NotFound from './components/NotFound'
 
 class App extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      title: "Kyler Mintah",
+      title: 'Kyler Mintah',
       headerLinks: [
-        { title: "Home", path: "/" },
-        { title: "About", path: "/about" },
-        { title: "Contact", path: "/contact" },
+        { title: 'Home', path: '/' },
+        { title: 'About', path: '/about' },
+        { title: 'Contact', path: '/contact' },
       ],
       home: {
-        title: "Kyler Mintah",
-        subtitle: "",
-        text: "Customer Engineer | Developer | Creative ",
+        title: 'Kyler Mintah',
+        subtitle: '',
+        text: 'Customer Engineer | Developer | Creative ',
       },
       about: {
-        title: "About Me",
+        title: 'About Me',
         subtitle:
-          "born in Virginia, USA, raised in Johannesburg, South Africa, recently spotted around Philadelphia, USA",
-        text: "",
+          'born in Virginia, USA, raised in Johannesburg, South Africa, recently spotted around Philadelphia, USA',
+        text: '',
       },
       projects: {
-        title: "What keeps me busy",
+        title: 'What keeps me busy',
         subtitle:
           "Projects I've been able to work on in my free time and with brilliant teammates!",
-        text: "",
+        text: '',
       },
       contact: {
-        title: "Get in touch",
-        subtitle: "Feel free to reach out! 📫",
-        text: "Have an inquiry? Feel free to reach out! 📫",
+        title: 'Get in touch',
+        subtitle: 'Feel free to reach out! 📫',
+        text: 'Have an inquiry? Feel free to reach out! 📫',
       },
       garden: {
-        title: "Blog",
-        subtitle: "thoughts, how-tos and ideas",
-        text: "",
+        title: 'Blog',
+        subtitle: 'thoughts, how-tos and ideas',
+        text: '',
       },
-    };
+    }
   }
 
   render() {
@@ -59,7 +60,7 @@ class App extends React.Component {
         <Container className="p-2" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand className="nav-link">
-              <a href="/" style={{ color: "black", fontWeight: "bolder" }}>
+              <a href="/" style={{ color: 'black', fontWeight: 'bolder' }}>
                 KM
               </a>
             </Navbar.Brand>
@@ -85,7 +86,7 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-
+          <Switch>
           <Route
             path="/"
             exact
@@ -138,12 +139,13 @@ class App extends React.Component {
             )}
           />
           <Route path="/yaml-templates" exact render={() => <BlogPage />} />
-
+          <Route component={NotFound} />
+          </Switch>
           <Footer />
         </Container>
       </Router>
-    );
+    )
   }
 }
 
-export default App;
+export default App
