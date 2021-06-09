@@ -78,8 +78,8 @@
     "date": "Fall'19 - Spring'20",
     "subtitle": "Tune In, Tune Out 🎧",
     "category": "ESE Senior Design Project",
-    "highlight": "Ketterer Memorial Prize Winning Project 🎉",
-    "description": "A snap-on wearable solution for selective noise filtering",
+    "highlight": "Ketterer Memorial Award Winning Project 🎉",
+    "description": "A snap-on wearable solution for selective noise filtering.",
     "image": "",
     "iframe_embed_link": "https://player.vimeo.com/video/406106876?byline=0&portrait=0",
     "skills": [
@@ -117,10 +117,48 @@
   },
 
   {
+    "id": "APOC",
+    "icon": "https://branding.web-resources.upenn.edu/sites/default/files/simplified-shield-final%20%285%29.png",
+    "icon_alt": "UPenn Logo",
+    "title": "Healthcare Research Project",
+    "date": "Spring '19",
+    "subtitle": "A.I. Symptom Screening Application",
+    "category": "Appropriate Point of Care Diagnostics Program",
+    "highlight": "",
+    "description": "Our 8-student research team spent the Spring semester researching apropriate point of care diagnostics solutions for communicable diseases. We then embarked on a 3-week research trip to Kumasi, Ghana where we conducted daily interviews with patients, clinicians, and medical professors at Kumasi's regional hospitals and universities. We noticed potential shortcomings in a paper-based TB patient evaluation screening process used in some of the public hospitals that we felt could be addressed by the empowering nursing staff with A.I. We developed an application as a PoC for an symptom-based classification system that could be used to assess risk for HIV/Tuberculouses co-infection and minimize the potential for missed cases. We showcased our solution at the Kwame Nkrumah University of Science & Techology in Kumasi.",
+    "image": "https://apoc.seas.upenn.edu/wp-content/uploads/2019/10/cropped-PicsArt_06-03-12.03.44.jpg",
+    "iframe_embed_link": "",
+    "skills": [
+      "Research",
+      "Healthcare",
+      "Machine Learning",
+      "Python",
+      "Java"
+    ],
+    "action_heading": "",
+    "actions": [
+      {
+        "text": "Visit Program Site",
+        "link": "https://apoc.seas.upenn.edu/"
+      },
+      {
+        "text": "Team Repository",
+        "link": "https://github.com/kylermintah/APOC-2019/blob/master/README.md"
+      }
+    ],
+    "teammates": [
+      {
+        "name": "2019 APOC Team",
+        "link": "https://github.com/kylermintah/APOC-2019/raw/master/docs/teamslide.PNG"
+      }
+    ]
+  },
+
+  {
     "id": "clc",
     "icon": "https://user-images.githubusercontent.com/24496327/120087836-91a62680-c0b9-11eb-908f-4c18bbfb646b.png",
     "icon_alt": "Calorie Life cam model picture",
-    "title": "Automatic Guitar Tuner",
+    "title": "Calorie Life Cam",
     "date": "Fall'18",
     "subtitle": "Embedded Systems Project",
     "category": "ESE 350",
