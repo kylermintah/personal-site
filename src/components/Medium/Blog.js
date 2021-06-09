@@ -20,13 +20,12 @@ export class Blog extends Component {
     }
   }
   mediumURL =
-    'https://api.rss2json.com/v1/api.json?rss_url=https://kylermintah.medium.com/feed/'
+    `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fkylermintah.medium.com%2Ffeed%2F`
 
   componentDidMount() {
     Axios.get(this.mediumURL)
 
       .then((data) => {
-        // console.log(data.data)
         const avatar = data.data.feed.image
         const profileLink = data.data.feed.link
         const res = data.data.items //This is an array with the content. No feed, no info about author etc..
@@ -46,10 +45,8 @@ export class Blog extends Component {
             isloading: false,
           }),
           () => {
-            console.log(this.state)
           },
         )
-        console.log(data, res)
       })
       .catch((e) => {
         this.setState({ error: e.toJSON() })

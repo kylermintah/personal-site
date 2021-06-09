@@ -9,7 +9,7 @@ export default function ProjectContent() {
   return (
     <>
       {projects.map((project) => (
-        <VerticalTimelineElement
+        <VerticalTimelineElement key={project.id}
           contentStyle={{ background: "#2D364F", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid #3A465C" }}
           date={project.date}
