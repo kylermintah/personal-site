@@ -1,5 +1,35 @@
 [
   {
+    "id": "hopper",
+    "icon": "https://user-images.githubusercontent.com/24496327/123203543-8958c580-d484-11eb-8697-8e3423f1b91d.png",
+    "icon_alt": "EventHopper Logo",
+    "title": "EventHopper",
+    "date": "Summer 2020 - Present",
+    "subtitle": "Distributed Social Events Platform",
+    "category": "Android/iOS App",
+    "highlight": "",
+    "description": "Currently developing a fully featured travel/event app for iOS and Android set for release later this year. Stay tuned!",
+    "image": "https://user-images.githubusercontent.com/24496327/123202383-7e9d3100-d482-11eb-927e-92560135b3cb.gif",
+    "iframe_embed_link": "",
+    "skills": ["Flutter", "Android", "iOS", "TypeScript", "Node.js", "Docker"],
+    "action_heading": "",
+    "actions": [],
+    "teammates": [
+      {
+        "name": "Ransford Antwi",
+        "link": "https://www.ransfordantwi.com/"
+      },
+      {
+        "name": "Batchema Sombie",
+        "link": "https://www.batchema.com/"
+      },
+      {
+        "name": "Jintana Cunningham",
+        "link": "https://www.jintana.me/"
+      }
+    ]
+  },
+  {
     "id": "wedoo",
     "icon": "https://user-images.githubusercontent.com/24496327/119273543-6c0caf00-bbd9-11eb-8193-8c666ef741f2.png",
     "icon_alt": "Wedoo Logo",
@@ -128,13 +158,7 @@
     "description": "Our 8-student research team spent the Spring semester researching apropriate point of care diagnostics solutions for communicable diseases. We then embarked on a 3-week research trip to Kumasi, Ghana where we conducted daily interviews with patients, clinicians, and medical professors at Kumasi's regional hospitals and universities. We noticed potential shortcomings in a paper-based TB patient evaluation screening process used in some of the public hospitals that we felt could be addressed by the empowering nursing staff with A.I. We developed an application as a PoC for an symptom-based classification system that could be used to assess risk for HIV/Tuberculouses co-infection and minimize the potential for missed cases. We showcased our solution at the Kwame Nkrumah University of Science & Techology in Kumasi.",
     "image": "https://apoc.seas.upenn.edu/wp-content/uploads/2019/10/cropped-PicsArt_06-03-12.03.44.jpg",
     "iframe_embed_link": "",
-    "skills": [
-      "Research",
-      "Healthcare",
-      "Machine Learning",
-      "Python",
-      "Java"
-    ],
+    "skills": ["Research", "Healthcare", "Machine Learning", "Python", "Java"],
     "action_heading": "",
     "actions": [
       {

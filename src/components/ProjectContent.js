@@ -1,20 +1,21 @@
-import { Chip } from "@material-ui/core";
-import React from "react";
-import { Row } from "react-bootstrap";
-import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import { Chip } from '@material-ui/core'
+import React from 'react'
+import { Row } from 'react-bootstrap'
+import { VerticalTimelineElement } from 'react-vertical-timeline-component'
 
-const projects = require("../content/projects.json");
+const projects = require('../content/projects.json')
 
 export default function ProjectContent() {
   return (
     <>
       {projects.map((project) => (
-        <VerticalTimelineElement key={project.id}
-          contentStyle={{ background: "#2D364F", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid #3A465C" }}
+        <VerticalTimelineElement
+          key={project.id}
+          contentStyle={{ background: '#2D364F', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid #3A465C' }}
           date={project.date}
           dateClassName="k-date-2"
-          iconStyle={{ background: "#fff", color: "#fff" }}
+          iconStyle={{ background: '#fff', color: '#fff' }}
           icon={
             <img
               className="vertical-timeline-element-icon bounce-in"
@@ -26,7 +27,7 @@ export default function ProjectContent() {
         >
           <h3
             className="vertical-timeline-element-title"
-            style={{ fontWeight: "lighter" }}
+            style={{ fontWeight: 'lighter' }}
           >
             {project.title}
           </h3>
@@ -36,25 +37,25 @@ export default function ProjectContent() {
           <p>{project.category}</p>
           {project.highlight.length > 0 ? (
             <p
-              style={{ fontWeight: "lighter", WebkitTextFillColor: "#FFBC00" }}
+              style={{ fontWeight: 'lighter', WebkitTextFillColor: '#FFBC00' }}
             >
               {project.highlight} <br />
             </p>
           ) : null}
           {!project.marker ? (
-            <p style={{ fontWeight: "lighter" }}>
+            <p style={{ fontWeight: 'lighter' }}>
               {project.description} <br />
               {project.skills ? (
                 <div>
                   <hr className="solid" color="#7B7D82"></hr>
 
                   <Row
-                    style={{ padding: "0%", justifyContent: "space-evenly" }}
+                    style={{ padding: '0%', justifyContent: 'space-evenly' }}
                   >
                     {project.skills.map((skill) => (
                       <Chip
                         label={skill}
-                        style={{ padding: "0.1rem", marginTop: "0.5rem" }}
+                        style={{ padding: '0.1rem', marginTop: '0.5rem' }}
                       ></Chip>
                     ))}
                   </Row>
@@ -76,7 +77,10 @@ export default function ProjectContent() {
               {project.image.length > 0 ? (
                 <div>
                   <img
-                    style={{ maxWidth: "20em" }}
+                    style={{ maxWidth: '20em', display: 'block',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    width: '70%' }}
                     src={project.image}
                     alt={`${project.title} preview`}
                   ></img>
@@ -106,7 +110,7 @@ export default function ProjectContent() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        {" "}
+                        {' '}
                         <Chip
                           label={<strong>{action.text}</strong>}
                           color="primary"
@@ -129,8 +133,8 @@ export default function ProjectContent() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        {" "}
-                        {teammate.name}{" "}
+                        {' '}
+                        {teammate.name}{' '}
                       </a>
                     ))}
                   </strong>
@@ -142,5 +146,5 @@ export default function ProjectContent() {
         </VerticalTimelineElement>
       ))}
     </>
-  );
+  )
 }
