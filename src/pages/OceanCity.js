@@ -2,7 +2,7 @@ import React from "react";
 // import Carousel from '../components/Carousel';
 import TripTimeline from "../components/TripTimeline";
 import Spotlight from "../components/Spotlight";
-import ParticlesBg from 'particles-bg';
+// import ParticlesBg from 'particles-bg';
 import { Content } from "../components/Content";
 
 function HomePage(props) {
