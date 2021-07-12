@@ -7,6 +7,7 @@ import Nav from 'react-bootstrap/Nav'
 import './App.css'
 import { Footer } from './components/'
 import HomePage from './pages/HomePage'
+import OceanCity from './pages/OceanCity'
 import ContactPage from './pages/ContactPage'
 import BlogPage from './pages/BlogPage'
 import DigitalGardenPage from './pages/DigitalGardenPage'
@@ -135,6 +136,17 @@ class App extends React.Component {
               <ContactPage
                 title={this.state.contact.title}
                 text={this.state.contact.text}
+              />
+            )}
+          />
+          <Route
+            path="/ocean-city"
+            exact
+            render={() => (
+              <OceanCity
+                title='Ocean City Trip'
+                subtitle='Your mission, should you choose to accept it:'
+                text='July 22 - July 25'
               />
             )}
           />
