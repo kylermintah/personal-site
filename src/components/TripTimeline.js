@@ -322,7 +322,8 @@ function AcceptPrompt() {
           I'm so glad you asked. First, please give me a call or message me to let me know that
           you're good with the plan (at the time of writing I'm debating coding the
           button you just clicked to send me an automatic receipt of your
-          response but my fingers and brain are tired). Then from there I'll make the arrangements 😊
+          response but my fingers and brain are tired). Let me know if you're ok with the number of days too. 
+          Then from there I'll set it up 😊
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleClose}>
