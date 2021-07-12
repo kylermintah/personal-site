@@ -10,6 +10,8 @@ import 'react-vertical-timeline-component/style.min.css'
 export function TripTimeline(props) {
   return (
     <div>
+      <br></br>
+      <br></br>
       <img
         style={{
           maxWidth: '20em',
@@ -17,16 +19,20 @@ export function TripTimeline(props) {
           marginLeft: 'auto',
           marginRight: 'auto',
           width: '70%',
+          borderRadius:'300%',
+          objectFit:'cover'
         }}
-        src="https://cdn.dribbble.com/users/912110/screenshots/2180306/plaza-800x600.gif"
+        src="https://i.pinimg.com/originals/d6/a8/34/d6a834060390451e8c321672ab882508.gif"
         alt="casino resort hotel"
       ></img>
+      <br></br>
+      <br></br>
       <VerticalTimeline className="k-overflow" layout="2-columns">
         <VerticalTimelineElement
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#FFFFFF' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
           date="July 22nd, 9:15 AM - 11:26 AM"
-          dateClassName="k-date-2"
+          dateClassName="k-date-3"
           iconStyle={{ background: '#fff', color: '#fff' }}
           icon={
             <img
@@ -117,7 +123,7 @@ export function TripTimeline(props) {
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#FFFFFF' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
           date="July 22 - July 24"
-          dateClassName="k-date-2"
+          dateClassName="k-date-3"
           iconStyle={{ background: '#fff', color: '#fff' }}
           icon={
             <img
@@ -136,10 +142,10 @@ export function TripTimeline(props) {
             Fun!😜
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            <strong>We live</strong>
+            <strong></strong>
           </h4>
           <p>
-            Atlantic/Ocean City
+           "What will we do in Atlantic/Ocean City?"
             <br />
           </p>
           <p style={{ fontWeight: 'lighter' }}>
@@ -153,7 +159,7 @@ export function TripTimeline(props) {
             <li>heritage museum visit</li>
             <li>amusement park</li>
             <li>at least one late night netflix marathon</li>
-            we'll decide together. Will nail down a good itinerary ahead of
+            Will nail down a good daily itinerary ahead of
             trip!
           </p>
           <br />
@@ -171,7 +177,7 @@ export function TripTimeline(props) {
             ></img>
             <br />
             <br />
-            <h6 style={{}}>What about the weather?</h6>
+            <h6 style={{}}>"What about the weather?"</h6>
             <br></br>
             <img
               style={{
@@ -185,16 +191,21 @@ export function TripTimeline(props) {
               alt="weather widget"
             ></img>
             <br />
-            <br />I checked the 10 day forecast and the weather is looking
-            decent over the dates we would be there!<br></br>
-            <a
-              href="https://weather.com/weather/tenday/l/USNJ0015"
-              target="_blank"
-              rel="noreferrer"
-              style={{ color: 'orange', fontWeight: 'bold' }}
-            >
-              Link to detailed 10 day weather report.
-            </a>
+            <br />
+            <p style={{ fontWeight: 'lighter' }}>
+              I checked the 10 day forecast and the weather is looking decent
+              over the dates we would be there!
+              <br></br>
+              <br></br>
+              <a
+                href="https://weather.com/weather/tenday/l/USNJ0015"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: 'orange', fontWeight: 'bold' }}
+              >
+                Click to view detailed 10 day weather report.
+              </a>
+            </p>
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -268,8 +279,8 @@ export function TripTimeline(props) {
         </h4>
         <br></br>
         <br></br>
-        <strong>Tyler Lawson, do you accept the mission?</strong>
-        <br></br>
+        <strong>Tyler Lawson, do you accept the mission?</strong><p> (choose below)</p>
+
         <br></br>
         {AcceptPrompt()} &nbsp;&nbsp;&nbsp;
         {NotAcceptPrompt()}
@@ -295,23 +306,23 @@ function AcceptPrompt() {
           <Modal.Title>Get hype! 🎉</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          Tyler, this trip is my gift to you 🎁. Therefore don't even think
+          Tyler, this trip is my gift to you 🎁. So don't even think
           about venmo. Consider it purged from the app store. Doesn't exist...
           unless my card declines on the boardwalk. That was a joke! (I hope){' '}
           <br />
-          <br /> I spent time combing through work beneifts to write off as much
-          as possible (hotel, travel, etc.) <br></br>
+          {/* <br /> I spent time combing through work beneifts to write off as much
+          as possible (hotel, travel, etc.) <br></br> */}
           <br></br> I want to take you on this trip both as a congratulatory
-          gift for getting into one of the top Law Schools on the planet and to
+          gift for getting into one of the top Law Schools on the planet and also to
           spend some quality time with my favourite person.
           <br />
           <br />
           <strong>So what happens next?</strong>
           <br />
-          I'm so glad you asked. First, please message me to let me know that
-          you've decided to come (at the time of writing I'm debating coding the
+          I'm so glad you asked. First, please give me a call or message me to let me know that
+          you're good with the plan (at the time of writing I'm debating coding the
           button you just clicked to send me an automatic receipt of your
-          response but my fingers and brain are tired).
+          response but my fingers and brain are tired). Then from there I'll make the arrangements 😊
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleClose}>
@@ -341,7 +352,7 @@ function NotAcceptPrompt() {
         </Modal.Header>
         <Modal.Body>
           Yeah well this is awkward... whoops um, it looks like there was an
-          error processing your response... please contact the programmer
+          error processing your response... please contact the programmer or click "I accept!"
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleClose}>
