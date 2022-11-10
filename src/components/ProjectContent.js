@@ -1,9 +1,9 @@
-import { Chip } from '@material-ui/core'
-import React from 'react'
-import { Row } from 'react-bootstrap'
-import { VerticalTimelineElement } from 'react-vertical-timeline-component'
+import Chip from "@mui/material/Chip";
+import React from "react";
+import { Row } from "react-bootstrap";
+import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
-const projects = require('../content/projects.json')
+const projects = require("../content/projects.json");
 
 export default function ProjectContent() {
   return (
@@ -11,11 +11,11 @@ export default function ProjectContent() {
       {projects.map((project) => (
         <VerticalTimelineElement
           key={project.id}
-          contentStyle={{ background: '#2D364F', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid #3A465C' }}
+          contentStyle={{ background: "#2D364F", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid #3A465C" }}
           date={project.date}
           dateClassName="k-date-2"
-          iconStyle={{ background: '#fff', color: '#fff' }}
+          iconStyle={{ background: "#fff", color: "#fff" }}
           icon={
             <img
               className="vertical-timeline-element-icon bounce-in"
@@ -27,7 +27,7 @@ export default function ProjectContent() {
         >
           <h3
             className="vertical-timeline-element-title"
-            style={{ fontWeight: 'lighter' }}
+            style={{ fontWeight: "lighter" }}
           >
             {project.title}
           </h3>
@@ -37,26 +37,40 @@ export default function ProjectContent() {
           <p>{project.category}</p>
           {project.highlight.length > 0 ? (
             <p
-              style={{ fontWeight: 'lighter', WebkitTextFillColor: '#FFBC00' }}
+              style={{ fontWeight: "lighter", WebkitTextFillColor: "#FFBC00" }}
             >
               {project.highlight} <br />
             </p>
           ) : null}
           {!project.marker ? (
-            <p style={{ fontWeight: 'lighter' }}>
+            <div style={{ fontWeight: "lighter" }}>
+              <br></br>
               {project.description} <br />
               {project.skills ? (
                 <div>
                   <hr className="solid" color="#7B7D82"></hr>
 
                   <Row
-                    style={{ padding: '0%', justifyContent: 'space-evenly' }}
+                    style={{ padding: "0%", justifyContent: "space-evenly" }}
                   >
                     {project.skills.map((skill) => (
-                      <Chip
-                        label={skill}
-                        style={{ padding: '0.1rem', marginTop: '0.5rem' }}
-                      ></Chip>
+                      <button
+                        style={{
+                          paddingInline: "0.7rem",
+                          paddingBlock: "0.2rem",
+                          marginTop: "0.5rem",
+                          backgroundColor: "#E0E0E0",
+                          border: "0",
+                          borderRadius: "3rem",
+                          pointerEvents: "none",
+                          fontWeight: "lighter",
+                          fontSize: "0.9rem",
+                          fontFamily: "Sans-serif",
+                          color: "#2D364F",
+                        }}
+                      >
+                        {skill}
+                      </button>
                     ))}
                   </Row>
 
@@ -77,10 +91,13 @@ export default function ProjectContent() {
               {project.image.length > 0 ? (
                 <div>
                   <img
-                    style={{ maxWidth: '20em', display: 'block',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    width: '70%' }}
+                    style={{
+                      maxWidth: "20em",
+                      display: "block",
+                      marginLeft: "auto",
+                      marginRight: "auto",
+                      width: "70%",
+                    }}
                     src={project.image}
                     alt={`${project.title} preview`}
                   ></img>
@@ -109,9 +126,11 @@ export default function ProjectContent() {
                         href={action.link}
                         target="_blank"
                         rel="noreferrer"
+                        key={action.text}
                       >
-                        {' '}
+                        {" "}
                         <Chip
+                          style={{ cursor: "pointer" }}
                           label={<strong>{action.text}</strong>}
                           color="primary"
                         ></Chip>
@@ -126,25 +145,27 @@ export default function ProjectContent() {
                 <>
                   <strong>
                     Teammate(s):
-                    {project.teammates.map((teammate) => (
+                    {project.teammates.map((teammate, index) => (
                       <a
                         className="link"
                         href={teammate.link}
                         target="_blank"
                         rel="noreferrer"
+                        key={teammate.name}
                       >
-                        {' '}
-                        {teammate.name}{' '}
+                        {" "}
+                        {index ? " - " : ""}
+                        {teammate.name}{" "}
                       </a>
                     ))}
                   </strong>
                   <br />
                 </>
               ) : null}
-            </p>
+            </div>
           ) : null}
         </VerticalTimelineElement>
       ))}
     </>
-  )
+  );
 }

@@ -4,11 +4,11 @@
     "icon": "https://user-images.githubusercontent.com/24496327/123203543-8958c580-d484-11eb-8697-8e3423f1b91d.png",
     "icon_alt": "EventHopper Logo",
     "title": "EventHopper",
-    "date": "Summer 2020 - Present",
-    "subtitle": "Distributed Social Events Platform",
+    "date": "Summer 2020",
+    "subtitle": "Social Events Platform",
     "category": "Android/iOS App",
     "highlight": "",
-    "description": "Currently developing a fully featured travel/event app for iOS and Android set for release later this year. Stay tuned!",
+    "description": "Developed a travel/event app for iOS and Android. Dogfooding amongst the team. Developed Tinder-like swipe system for finding things to do.",
     "image": "https://user-images.githubusercontent.com/24496327/123202383-7e9d3100-d482-11eb-927e-92560135b3cb.gif",
     "iframe_embed_link": "",
     "skills": ["Flutter", "Android", "iOS", "TypeScript", "Node.js", "Docker"],
@@ -34,20 +34,14 @@
     "icon": "https://user-images.githubusercontent.com/24496327/119273543-6c0caf00-bbd9-11eb-8193-8c666ef741f2.png",
     "icon_alt": "Wedoo Logo",
     "title": "WEDOO",
-    "date": "Summer 2020 - Present",
+    "date": "Summer 2020",
     "subtitle": "Real-Time Group ToDo List 📱✏️",
     "category": "Android/iOS App",
     "highlight": "",
     "description": "I grew tired of using our groupchat to keep track of groceries and errand planning. I thought it would be fun to build a mobile app that makes it easy to collaborate on tasks in real-time. Has been helpful so far on group trips to the supermarket! Currently being used by some family & friends.",
     "image": "https://user-images.githubusercontent.com/24496327/119276109-00314300-bbe7-11eb-85f7-8415cc059807.gif",
     "iframe_embed_link": "",
-    "skills": [
-      "Flutter",
-      "Firebase",
-      "Node.js",
-      "GitHub API",
-      "Stream Processing"
-    ],
+    "skills": ["Flutter", "Firebase", "Node.js", "REST API", "Android"],
     "action_heading": "Reach out if you're interested in developing Wedoo further!",
     "actions": [
       {
@@ -63,11 +57,11 @@
     "icon": "https://i.redd.it/o5wgkhoqkem31.png",
     "icon_alt": "Unity logo",
     "title": "Project MForge",
-    "date": "Summer 2021 - Present",
+    "date": "Summer 2021",
     "subtitle": "Game Development Project 🕹️",
     "category": "Blender & Unity Engine",
     "highlight": "",
-    "description": "Since 2018 I have spent time writing, illustrating and animating a story inspired by African folklore. This year I have chosen a medium through which I would like to share this story - a video game! Over the Summer I have been slowly building up experience in 3D Modeling, 3D Animation and Unity. Stay tuned!",
+    "description": "Tried my hand at a roughly refined video game in Unity. Over the Summer I have been slowly building up experience in 3D Modeling, 3D Animation and Game development! Stay tuned.",
     "image": "",
     "iframe_embed_link": "https://player.vimeo.com/video/554077071?byline=0&portrait=0&loop=1&autoplay=1",
     "skills": [
@@ -77,14 +71,14 @@
       "Game Deveopment",
       "Multimedia Design"
     ],
-    "action_heading": "More on this soon!",
+    "action_heading": "",
     "actions": [],
     "teammates": []
   },
 
   {
     "id": "upenn-projects-below",
-    "icon": "https://branding.web-resources.upenn.edu/sites/default/files/simplified-shield-final%20%285%29.png",
+    "icon": "/upenn-emblem.png",
     "icon_alt": "University of Pennsylvania Logo",
     "title": "University of Pennsylvania",
     "date": "",
@@ -148,7 +142,7 @@
 
   {
     "id": "APOC",
-    "icon": "https://branding.web-resources.upenn.edu/sites/default/files/simplified-shield-final%20%285%29.png",
+    "icon": "/upenn-emblem.png",
     "icon_alt": "UPenn Logo",
     "title": "Healthcare Research Project",
     "date": "Spring '19",
@@ -156,15 +150,11 @@
     "category": "Appropriate Point of Care Diagnostics Program",
     "highlight": "",
     "description": "Our 8-student research team spent the Spring semester researching apropriate point of care diagnostics solutions for communicable diseases. We then embarked on a 3-week research trip to Kumasi, Ghana where we conducted daily interviews with patients, clinicians, and medical professors at Kumasi's regional hospitals and universities. We noticed potential shortcomings in a paper-based TB patient evaluation screening process used in some of the public hospitals that we felt could be addressed by the empowering nursing staff with A.I. We developed an application as a PoC for an symptom-based classification system that could be used to assess risk for HIV/Tuberculouses co-infection and minimize the potential for missed cases. We showcased our solution at the Kwame Nkrumah University of Science & Techology in Kumasi.",
-    "image": "https://apoc.seas.upenn.edu/wp-content/uploads/2019/10/cropped-PicsArt_06-03-12.03.44.jpg",
+    "image": "/apoc.jpg",
     "iframe_embed_link": "",
     "skills": ["Research", "Healthcare", "Machine Learning", "Python", "Java"],
     "action_heading": "",
     "actions": [
-      {
-        "text": "Visit Program Site",
-        "link": "https://apoc.seas.upenn.edu/"
-      },
       {
         "text": "Team Repository",
         "link": "https://github.com/kylermintah/APOC-2019/blob/master/README.md"

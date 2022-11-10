@@ -1,10 +1,10 @@
 import React from "react";
-import { Col, Container, Jumbotron, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 export function Spotlight(props) {
   return (
-    <Jumbotron className="bg-transparent jumbotron-fluid p-0">
-      <Container fluid={true}>
+    <div className="bg-transparent jumbotron-fluid p-0">
+      <Container fluid={true} style={{ marginTop: "0rem" }}>
         <Row className="justify-content-center">
           <Col md={9} sm={12}>
             {props.title && (
@@ -21,7 +21,7 @@ export function Spotlight(props) {
           </Col>
         </Row>
       </Container>
-    </Jumbotron>
+    </div>
   );
 }
 
