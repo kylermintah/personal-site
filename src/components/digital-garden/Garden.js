@@ -11,17 +11,6 @@ export function Garden(props) {
       <div>
         <Blog />
       </div>
-
-      {/* {articles.map(article => (
-            <ArticleCard className ={styles.mr} key={`${article.id}`}>
-              <ArticleCard.Image src={article.image} alt = {article.Button}/>
-              <ArticleCard.Body>
-                <ArticleCard.Title>{article.title}</ArticleCard.Title>
-                <ArticleCard.Text>{article.text}</ArticleCard.Text>
-                <ArticleCard.Button link={article.link}>{article.ctaText}</ArticleCard.Button>
-              </ArticleCard.Body>
-            </ArticleCard>
-          ))} */}
     </main>
   );
 }

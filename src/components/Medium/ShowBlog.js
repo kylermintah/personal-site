@@ -1,7 +1,7 @@
 import React from "react";
 import c from "./ShowBlog.module.css";
 import moment from "moment";
-import { withRouter } from "react-router-dom";
+// import { withRouter } from "react-router-dom";
 
 function ShowBlog(props, p) {
   function ToText(node) {
@@ -92,4 +92,4 @@ function ShowBlog(props, p) {
   );
 }
 
-export default withRouter(ShowBlog);
+export default (ShowBlog);

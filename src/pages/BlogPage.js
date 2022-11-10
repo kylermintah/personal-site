@@ -1,47 +1,19 @@
-import React, { Component } from "react";
-import ReactMarkdown from "react-markdown";
-import yamlTemplatePath from "../articles/yaml-templates/yaml-templates.md";
-import { CodeBlock, HeadingRenderer } from "../articles/utils";
+import React from "react";
+import { Garden } from "../components";
+import { Spotlight } from "../components";
+import { Content } from "../components";
 
-class BlogPage extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { terms: props };
-  }
-
-  componentDidMount() {}
-
-  render() {
-    fetch(yamlTemplatePath)
-      .then((response) => response.text())
-      .then((text) => {
-        this.setState({ terms: text });
-      });
-    return (
-      <div className="d-flex justify-content-md-center">
-        <div
-          className=""
-          style={{
-            maxWidth: "750px",
-            marginTop: "50px",
-            justifyContent: "center",
-          }}
-        >
-          {/* <Spotlight title={props.title} text={props.subtitle} /> */}
-
-          <div className="content">
-            <ReactMarkdown
-              source={this.state.terms}
-              renderers={{ code: CodeBlock, heading: HeadingRenderer }}
-              allowDangerousHtml={true}
-              className="line-break"
-            />
-          </div>
-        </div>
-      </div>
-    );
-  }
+function BlogPage(props) {
+  return (
+    <div>
+      <Spotlight title={props.title} text={props.subtitle} />
+      <Content>
+        {/* <a href='https://maggieappleton.com/garden-history' target='_blank' rel='noreferrer'> What is a digital garden?</a> */}
+        <div style={{ height: 48 }}></div>
+        <Garden />
+      </Content>
+    </div>
+  );
 }
 
 export default BlogPage;

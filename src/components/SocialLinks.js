@@ -47,8 +47,13 @@ export class SocialLinks extends React.Component {
   makeItems = (items) => {
     return items.map((item) => {
       return (
-        <h1 style={{ fontSize: "6em" }}>
-          <a href={item.link} target="_blank" rel="noreferrer">
+        <h1 style={{ fontSize: "6em" }} key={item.id}>
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noreferrer"
+            style={{ display: "flex", flexWrap: "wrap" }}
+          >
             {item.icon}
           </a>
         </h1>
@@ -58,7 +63,19 @@ export class SocialLinks extends React.Component {
 
   render() {
     return (
-      <Container fluid={true} style={{ maxWidth: "600px" }}>
+      <Container
+        fluid={true}
+        style={{
+          display: "flex",
+          paddingTop:'1rem',
+          flexWrap:'wrap',
+          maxWidth: "16rem",
+          minHeight: "16rem",
+          borderRadius: "3rem",
+          boxShadow:
+            " 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12), 0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1)",
+        }}
+      >
         <Row style={{ padding: "3%", justifyContent: "space-evenly" }}>
           {this.makeItems(this.state.items)}
         </Row>
