@@ -11,8 +11,19 @@ export default function ProjectContent() {
       {projects.map((project) => (
         <VerticalTimelineElement
           key={project.id}
-          contentStyle={{ background: "#2D364F", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid #3A465C" }}
+          contentStyle={
+            !project.marker
+              ? { background: "#2D364F", color: "#fff" }
+              : {
+                  background: "transparent",
+                  color: "black",
+                  boxShadow: "none",
+                  fontWeight: "1000",
+                }
+          }
+          contentArrowStyle={
+            !project.marker ? { borderRight: "7px solid #3A465C" } : {}
+          }
           date={project.date}
           dateClassName="k-date-2"
           iconStyle={{ background: "#fff", color: "#fff" }}

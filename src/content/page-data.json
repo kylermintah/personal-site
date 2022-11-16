@@ -1,35 +1,38 @@
 {
+  "title": "Kyler Mintah",
+  "headerLinks": [
+    { "title": "Home", "path": "/" },
+    { "title": "About", "path": "/about" },
+    { "title": "Contact", "path": "/contact" }
+  ],
+  "home": {
     "title": "Kyler Mintah",
-    "headerLinks": [
-      { "title": "Home", "path": "/" },
-      { "title": "About", "path": "/about" },
-      { "title": "Contact", "path": "/contact" }
-    ],
-    "home": {
-      "title": "Kyler Mintah",
-      "subtitle": "",
-      "text": " Developer | Creative "
-    },
-    "about": {
-      "title": "About Me",
-      "subtitle":
-        "born in Virginia, USA, grew up in Johannesburg, South Africa, recently spotted around Philadelphia, USA",
-      "text": ""
-    },
-    "projects": { 
-      "title": "What keeps me busy",
-      "subtitle":
-        "Projects I've been able to work on in my free time with brilliant teammates!",
-      "text": ""
-    },
-    "contact": {
-      "title": "Get in touch",
-      "subtitle": "Feel free to reach out! 📫",
-      "text": "Have an inquiry? Feel free to reach out! 📫"
-    },
-    "garden": {
-      "title": "Blog",
-      "subtitle": "thoughts, how-tos and ideas",
-      "text": ""
-    }
+    "subtitle": "",
+    "text": " Developer | Creative "
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "born in Virginia, USA, grew up in Johannesburg, South Africa, recently spotted around Philadelphia, USA",
+    "text": ""
+  },
+  "projects": {
+    "title": "What keeps me busy",
+    "subtitle": "Projects I've been able to work on in my free time with brilliant teammates!",
+    "text": ""
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Feel free to reach out!",
+    "text": "Have an inquiry? Feel free to reach out!"
+  },
+  "garden": {
+    "title": "Blog",
+    "subtitle": "thoughts, how-tos and ideas",
+    "text": ""
+  },
+  "resume": {
+    "title": "Resume",
+    "subtitle": "",
+    "text": ""
   }
+}
