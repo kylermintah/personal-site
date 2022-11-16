@@ -17,10 +17,11 @@ function ContactPage(props) {
             fontSize: "large",
             fontFamily: "Open Sans",
             fontWeight: "bold",
+            textAlign:'right'
           }}
         >
-          You can email me at:<br></br>
-          <a
+         📫 send me an email me at<br></br>
+          <a style={{textDecoration:'none'}}
             href="mailto:kylermintah@gmail.com?subject=[Reaching Out]"
             className=".App-link"
           >
