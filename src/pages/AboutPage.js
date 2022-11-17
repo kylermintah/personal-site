@@ -9,7 +9,7 @@ function AboutPage(props) {
       <Spotlight title={props.title} />
       <div style={{ background: "#fff" }}>
         <Content>
-          <div
+          {/* <div
             style={{
               display: "flex",
               flexDirection: "column",
@@ -38,7 +38,7 @@ function AboutPage(props) {
             >
               View/Download Resume
             </button>
-          </div>
+          </div> */}
           <Timeline></Timeline>
         </Content>
       </div>
